@@ -1,0 +1,3374 @@
+{
+ "AK": {
+  "zips": 40,
+  "cities": 32,
+  "topCities": [
+   {
+    "city": "Anchorage",
+    "county": "Anchorage",
+    "zips": 7
+   },
+   {
+    "city": "Fairbanks",
+    "county": "Fairbanks North Star",
+    "zips": 2
+   },
+   {
+    "city": "Wasilla",
+    "county": "Matanuska-Susitna",
+    "zips": 2
+   },
+   {
+    "city": "Jber",
+    "county": "Anchorage",
+    "zips": 1
+   },
+   {
+    "city": "Girdwood",
+    "county": "Anchorage",
+    "zips": 1
+   },
+   {
+    "city": "Fort Wainwright",
+    "county": "Fairbanks North Star",
+    "zips": 1
+   },
+   {
+    "city": "Sitka",
+    "county": "Sitka",
+    "zips": 1
+   },
+   {
+    "city": "Palmer",
+    "county": "Matanuska-Susitna",
+    "zips": 1
+   },
+   {
+    "city": "Homer",
+    "county": "Kenai Peninsula",
+    "zips": 1
+   },
+   {
+    "city": "Dutch Harbor",
+    "county": "Aleutians West",
+    "zips": 1
+   },
+   {
+    "city": "Nome",
+    "county": "Nome",
+    "zips": 1
+   },
+   {
+    "city": "Petersburg",
+    "county": "Petersburg",
+    "zips": 1
+   }
+  ],
+  "maxPayout": 14.22
+ },
+ "AL": {
+  "zips": 586,
+  "cities": 431,
+  "topCities": [
+   {
+    "city": "Mobile",
+    "county": "Mobile",
+    "zips": 36
+   },
+   {
+    "city": "Birmingham",
+    "county": "Jefferson",
+    "zips": 32
+   },
+   {
+    "city": "Montgomery",
+    "county": "Montgomery",
+    "zips": 11
+   },
+   {
+    "city": "Huntsville",
+    "county": "Madison",
+    "zips": 10
+   },
+   {
+    "city": "Tuscaloosa",
+    "county": "Tuscaloosa",
+    "zips": 10
+   },
+   {
+    "city": "Dothan",
+    "county": "Houston",
+    "zips": 5
+   },
+   {
+    "city": "Gadsden",
+    "county": "Etowah",
+    "zips": 4
+   },
+   {
+    "city": "Opelika",
+    "county": "Lee",
+    "zips": 4
+   },
+   {
+    "city": "Bessemer",
+    "county": "Jefferson",
+    "zips": 4
+   },
+   {
+    "city": "Cullman",
+    "county": "Cullman",
+    "zips": 4
+   },
+   {
+    "city": "Jasper",
+    "county": "Walker",
+    "zips": 4
+   },
+   {
+    "city": "Auburn",
+    "county": "Lee",
+    "zips": 3
+   }
+  ],
+  "maxPayout": 50.4
+ },
+ "AR": {
+  "zips": 150,
+  "cities": 128,
+  "topCities": [
+   {
+    "city": "Little Rock",
+    "county": "Pulaski",
+    "zips": 11
+   },
+   {
+    "city": "Springdale",
+    "county": "Washington",
+    "zips": 3
+   },
+   {
+    "city": "Conway",
+    "county": "Faulkner",
+    "zips": 3
+   },
+   {
+    "city": "Fayetteville",
+    "county": "Washington",
+    "zips": 2
+   },
+   {
+    "city": "Fort Smith",
+    "county": "Sebastian",
+    "zips": 2
+   },
+   {
+    "city": "Jonesboro",
+    "county": "Craighead",
+    "zips": 2
+   },
+   {
+    "city": "Rogers",
+    "county": "Benton",
+    "zips": 2
+   },
+   {
+    "city": "North Little Rock",
+    "county": "Pulaski",
+    "zips": 2
+   },
+   {
+    "city": "Pine Bluff",
+    "county": "Jefferson",
+    "zips": 2
+   },
+   {
+    "city": "Hot Springs National Park",
+    "county": "Garland",
+    "zips": 2
+   },
+   {
+    "city": "Russellville",
+    "county": "Pope",
+    "zips": 2
+   },
+   {
+    "city": "Mabelvale",
+    "county": "Pulaski",
+    "zips": 1
+   }
+  ],
+  "maxPayout": 47.25
+ },
+ "AZ": {
+  "zips": 365,
+  "cities": 139,
+  "topCities": [
+   {
+    "city": "Phoenix",
+    "county": "Maricopa",
+    "zips": 77
+   },
+   {
+    "city": "Tucson",
+    "county": "Pima",
+    "zips": 37
+   },
+   {
+    "city": "Mesa",
+    "county": "Maricopa",
+    "zips": 19
+   },
+   {
+    "city": "Scottsdale",
+    "county": "Maricopa",
+    "zips": 15
+   },
+   {
+    "city": "Glendale",
+    "county": "Maricopa",
+    "zips": 12
+   },
+   {
+    "city": "Chandler",
+    "county": "Maricopa",
+    "zips": 8
+   },
+   {
+    "city": "Tempe",
+    "county": "Maricopa",
+    "zips": 8
+   },
+   {
+    "city": "Gilbert",
+    "county": "Maricopa",
+    "zips": 7
+   },
+   {
+    "city": "Peoria",
+    "county": "Maricopa",
+    "zips": 6
+   },
+   {
+    "city": "Flagstaff",
+    "county": "Coconino",
+    "zips": 6
+   },
+   {
+    "city": "Prescott",
+    "county": "Yavapai",
+    "zips": 6
+   },
+   {
+    "city": "Surprise",
+    "county": "Maricopa",
+    "zips": 5
+   }
+  ],
+  "maxPayout": 52.5
+ },
+ "CA": {
+  "zips": 2086,
+  "cities": 845,
+  "topCities": [
+   {
+    "city": "Sacramento",
+    "county": "Sacramento",
+    "zips": 100
+   },
+   {
+    "city": "Los Angeles",
+    "county": "Los Angeles",
+    "zips": 94
+   },
+   {
+    "city": "San Diego",
+    "county": "San Diego",
+    "zips": 76
+   },
+   {
+    "city": "Fresno",
+    "county": "Fresno",
+    "zips": 58
+   },
+   {
+    "city": "San Jose",
+    "county": "Santa Clara",
+    "zips": 57
+   },
+   {
+    "city": "San Francisco",
+    "county": "San Francisco",
+    "zips": 51
+   },
+   {
+    "city": "Long Beach",
+    "county": "Los Angeles",
+    "zips": 27
+   },
+   {
+    "city": "Oakland",
+    "county": "Alameda",
+    "zips": 26
+   },
+   {
+    "city": "Pasadena",
+    "county": "Los Angeles",
+    "zips": 25
+   },
+   {
+    "city": "Stockton",
+    "county": "San Joaquin",
+    "zips": 19
+   },
+   {
+    "city": "Riverside",
+    "county": "Riverside",
+    "zips": 17
+   },
+   {
+    "city": "Anaheim",
+    "county": "Orange",
+    "zips": 17
+   }
+  ],
+  "maxPayout": 140
+ },
+ "CO": {
+  "zips": 493,
+  "cities": 287,
+  "topCities": [
+   {
+    "city": "Denver",
+    "county": "Denver",
+    "zips": 66
+   },
+   {
+    "city": "Colorado Springs",
+    "county": "El Paso",
+    "zips": 34
+   },
+   {
+    "city": "Aurora",
+    "county": "Arapahoe",
+    "zips": 17
+   },
+   {
+    "city": "Littleton",
+    "county": "Arapahoe",
+    "zips": 16
+   },
+   {
+    "city": "Boulder",
+    "county": "Boulder",
+    "zips": 11
+   },
+   {
+    "city": "Pueblo",
+    "county": "Pueblo",
+    "zips": 9
+   },
+   {
+    "city": "Fort Collins",
+    "county": "Larimer",
+    "zips": 7
+   },
+   {
+    "city": "Arvada",
+    "county": "Jefferson",
+    "zips": 7
+   },
+   {
+    "city": "Englewood",
+    "county": "Arapahoe",
+    "zips": 7
+   },
+   {
+    "city": "Grand Junction",
+    "county": "Mesa",
+    "zips": 6
+   },
+   {
+    "city": "Greeley",
+    "county": "Weld",
+    "zips": 6
+   },
+   {
+    "city": "Westminster",
+    "county": "Adams",
+    "zips": 4
+   }
+  ],
+  "maxPayout": 63
+ },
+ "CT": {
+  "zips": 424,
+  "cities": 262,
+  "topCities": [
+   {
+    "city": "Hartford",
+    "county": "Capitol",
+    "zips": 36
+   },
+   {
+    "city": "New Haven",
+    "county": "South Central Connecticut",
+    "zips": 28
+   },
+   {
+    "city": "Stamford",
+    "county": "Western Connecticut",
+    "zips": 17
+   },
+   {
+    "city": "Waterbury",
+    "county": "Naugatuck Valley",
+    "zips": 16
+   },
+   {
+    "city": "Bridgeport",
+    "county": "Greater Bridgeport",
+    "zips": 10
+   },
+   {
+    "city": "Norwalk",
+    "county": "Western Connecticut",
+    "zips": 10
+   },
+   {
+    "city": "West Hartford",
+    "county": "Capitol",
+    "zips": 7
+   },
+   {
+    "city": "Danbury",
+    "county": "Western Connecticut",
+    "zips": 6
+   },
+   {
+    "city": "New Britain",
+    "county": "Capitol",
+    "zips": 4
+   },
+   {
+    "city": "Wallingford",
+    "county": "South Central Connecticut",
+    "zips": 4
+   },
+   {
+    "city": "Westport",
+    "county": "Western Connecticut",
+    "zips": 4
+   },
+   {
+    "city": "Manchester",
+    "county": null,
+    "zips": 4
+   }
+  ],
+  "maxPayout": 83.47
+ },
+ "DC": {
+  "zips": 271,
+  "cities": 3,
+  "topCities": [
+   {
+    "city": "Washington",
+    "county": "District of Columbia",
+    "zips": 265
+   },
+   {
+    "city": "Washington Navy Yard",
+    "county": "District of Columbia",
+    "zips": 5
+   },
+   {
+    "city": "Naval Anacost Annex",
+    "county": "District of Columbia",
+    "zips": 1
+   }
+  ],
+  "maxPayout": 84
+ },
+ "DE": {
+  "zips": 96,
+  "cities": 57,
+  "topCities": [
+   {
+    "city": "Wilmington",
+    "county": "New Castle",
+    "zips": 25
+   },
+   {
+    "city": "Newark",
+    "county": "New Castle",
+    "zips": 10
+   },
+   {
+    "city": "Dover",
+    "county": "Kent",
+    "zips": 5
+   },
+   {
+    "city": "New Castle",
+    "county": "New Castle",
+    "zips": 3
+   },
+   {
+    "city": "Dover AFB",
+    "county": "Kent",
+    "zips": 1
+   },
+   {
+    "city": "Middletown",
+    "county": "New Castle",
+    "zips": 1
+   },
+   {
+    "city": "Bear",
+    "county": "New Castle",
+    "zips": 1
+   },
+   {
+    "city": "Hockessin",
+    "county": "New Castle",
+    "zips": 1
+   },
+   {
+    "city": "Yorklyn",
+    "county": "New Castle",
+    "zips": 1
+   },
+   {
+    "city": "Smyrna",
+    "county": "Kent",
+    "zips": 1
+   },
+   {
+    "city": "Milford",
+    "county": "Sussex",
+    "zips": 1
+   },
+   {
+    "city": "Claymont",
+    "county": "New Castle",
+    "zips": 1
+   }
+  ],
+  "maxPayout": 102.38
+ },
+ "FL": {
+  "zips": 1304,
+  "cities": 464,
+  "topCities": [
+   {
+    "city": "Miami",
+    "county": "Miami-Dade",
+    "zips": 62
+   },
+   {
+    "city": "Orlando",
+    "county": "Orange",
+    "zips": 59
+   },
+   {
+    "city": "Tampa",
+    "county": "Hillsborough",
+    "zips": 58
+   },
+   {
+    "city": "Jacksonville",
+    "county": "Duval",
+    "zips": 48
+   },
+   {
+    "city": "Saint Petersburg",
+    "county": "Pinellas",
+    "zips": 31
+   },
+   {
+    "city": "Fort Lauderdale",
+    "county": "Broward",
+    "zips": 31
+   },
+   {
+    "city": "Pensacola",
+    "county": "Escambia",
+    "zips": 23
+   },
+   {
+    "city": "Tallahassee",
+    "county": "Leon",
+    "zips": 19
+   },
+   {
+    "city": "Sarasota",
+    "county": "Sarasota",
+    "zips": 18
+   },
+   {
+    "city": "Gainesville",
+    "county": "Alachua",
+    "zips": 17
+   },
+   {
+    "city": "Naples",
+    "county": "Collier",
+    "zips": 17
+   },
+   {
+    "city": "Fort Myers",
+    "county": "Lee",
+    "zips": 15
+   }
+  ],
+  "maxPayout": 66.59
+ },
+ "GA": {
+  "zips": 743,
+  "cities": 466,
+  "topCities": [
+   {
+    "city": "Atlanta",
+    "county": "Fulton",
+    "zips": 92
+   },
+   {
+    "city": "Savannah",
+    "county": "Chatham",
+    "zips": 18
+   },
+   {
+    "city": "Marietta",
+    "county": "Cobb",
+    "zips": 14
+   },
+   {
+    "city": "Augusta",
+    "county": "Richmond",
+    "zips": 13
+   },
+   {
+    "city": "Macon",
+    "county": "Bibb",
+    "zips": 10
+   },
+   {
+    "city": "Albany",
+    "county": "Dougherty",
+    "zips": 9
+   },
+   {
+    "city": "Decatur",
+    "county": "DeKalb",
+    "zips": 8
+   },
+   {
+    "city": "Athens",
+    "county": "Clarke",
+    "zips": 7
+   },
+   {
+    "city": "Lawrenceville",
+    "county": "Gwinnett",
+    "zips": 6
+   },
+   {
+    "city": "Columbus",
+    "county": "Muscogee",
+    "zips": 5
+   },
+   {
+    "city": "Gainesville",
+    "county": "Hall",
+    "zips": 5
+   },
+   {
+    "city": "Brunswick",
+    "county": "Glynn",
+    "zips": 5
+   }
+  ],
+  "maxPayout": 62.69
+ },
+ "HI": {
+  "zips": 27,
+  "cities": 16,
+  "topCities": [
+   {
+    "city": "Honolulu",
+    "county": "Honolulu",
+    "zips": 12
+   },
+   {
+    "city": "Kailua",
+    "county": "Honolulu",
+    "zips": 1
+   },
+   {
+    "city": "Hilo",
+    "county": "Hawaii",
+    "zips": 1
+   },
+   {
+    "city": "Pearl City",
+    "county": "Honolulu",
+    "zips": 1
+   },
+   {
+    "city": "Waipahu",
+    "county": "Honolulu",
+    "zips": 1
+   },
+   {
+    "city": "Kaneohe",
+    "county": "Honolulu",
+    "zips": 1
+   },
+   {
+    "city": "Mililani",
+    "county": "Honolulu",
+    "zips": 1
+   },
+   {
+    "city": "Kihei",
+    "county": "Maui",
+    "zips": 1
+   },
+   {
+    "city": "Ewa Beach",
+    "county": "Honolulu",
+    "zips": 1
+   },
+   {
+    "city": "Waimea",
+    "county": "Hawaii",
+    "zips": 1
+   },
+   {
+    "city": "Haiku",
+    "county": "Maui",
+    "zips": 1
+   },
+   {
+    "city": "Aiea",
+    "county": "Honolulu",
+    "zips": 1
+   }
+  ],
+  "maxPayout": 27.85
+ },
+ "IA": {
+  "zips": 753,
+  "cities": 695,
+  "topCities": [
+   {
+    "city": "Des Moines",
+    "county": "Polk",
+    "zips": 17
+   },
+   {
+    "city": "Cedar Rapids",
+    "county": "Linn",
+    "zips": 8
+   },
+   {
+    "city": "Sioux City",
+    "county": "Woodbury",
+    "zips": 8
+   },
+   {
+    "city": "Davenport",
+    "county": "Scott",
+    "zips": 6
+   },
+   {
+    "city": "Iowa City",
+    "county": "Johnson",
+    "zips": 5
+   },
+   {
+    "city": "Dubuque",
+    "county": "Dubuque",
+    "zips": 4
+   },
+   {
+    "city": "Ames",
+    "county": "Story",
+    "zips": 4
+   },
+   {
+    "city": "Waterloo",
+    "county": "Black Hawk",
+    "zips": 3
+   },
+   {
+    "city": "Council Bluffs",
+    "county": "Pottawattamie",
+    "zips": 3
+   },
+   {
+    "city": "Ankeny",
+    "county": "Polk",
+    "zips": 2
+   },
+   {
+    "city": "West Des Moines",
+    "county": "Polk",
+    "zips": 2
+   },
+   {
+    "city": "Urbandale",
+    "county": "Polk",
+    "zips": 2
+   }
+  ],
+  "maxPayout": 79.63
+ },
+ "ID": {
+  "zips": 316,
+  "cities": 262,
+  "topCities": [
+   {
+    "city": "Boise",
+    "county": "Ada",
+    "zips": 28
+   },
+   {
+    "city": "Idaho Falls",
+    "county": "Bonneville",
+    "zips": 7
+   },
+   {
+    "city": "Pocatello",
+    "county": "Bannock",
+    "zips": 6
+   },
+   {
+    "city": "Nampa",
+    "county": "Canyon",
+    "zips": 5
+   },
+   {
+    "city": "Coeur d'Alene",
+    "county": "Kootenai",
+    "zips": 3
+   },
+   {
+    "city": "Meridian",
+    "county": "Ada",
+    "zips": 3
+   },
+   {
+    "city": "Caldwell",
+    "county": "Canyon",
+    "zips": 3
+   },
+   {
+    "city": "Rexburg",
+    "county": "Madison",
+    "zips": 3
+   },
+   {
+    "city": "Twin Falls",
+    "county": "Twin Falls",
+    "zips": 2
+   },
+   {
+    "city": "Post Falls",
+    "county": "Kootenai",
+    "zips": 2
+   },
+   {
+    "city": "Moscow",
+    "county": "Latah",
+    "zips": 2
+   },
+   {
+    "city": "Sun Valley",
+    "county": "Blaine",
+    "zips": 2
+   }
+  ],
+  "maxPayout": 50.51
+ },
+ "IL": {
+  "zips": 885,
+  "cities": 639,
+  "topCities": [
+   {
+    "city": "Chicago",
+    "county": "Cook",
+    "zips": 82
+   },
+   {
+    "city": "Springfield",
+    "county": "Sangamon",
+    "zips": 35
+   },
+   {
+    "city": "Peoria",
+    "county": "Peoria",
+    "zips": 11
+   },
+   {
+    "city": "Rockford",
+    "county": "Winnebago",
+    "zips": 10
+   },
+   {
+    "city": "Aurora",
+    "county": "Kane",
+    "zips": 10
+   },
+   {
+    "city": "Bloomington",
+    "county": "McLean",
+    "zips": 8
+   },
+   {
+    "city": "Schaumburg",
+    "county": "Cook",
+    "zips": 7
+   },
+   {
+    "city": "Palatine",
+    "county": "Cook",
+    "zips": 7
+   },
+   {
+    "city": "East Saint Louis",
+    "county": "St. Clair",
+    "zips": 7
+   },
+   {
+    "city": "Champaign",
+    "county": "Champaign",
+    "zips": 6
+   },
+   {
+    "city": "Naperville",
+    "county": "DuPage",
+    "zips": 6
+   },
+   {
+    "city": "Joliet",
+    "county": "Will",
+    "zips": 6
+   }
+  ],
+  "maxPayout": 55.13
+ },
+ "IN": {
+  "zips": 655,
+  "cities": 472,
+  "topCities": [
+   {
+    "city": "Fort Wayne",
+    "county": "Allen",
+    "zips": 43
+   },
+   {
+    "city": "Indianapolis",
+    "county": "Marion",
+    "zips": 37
+   },
+   {
+    "city": "Evansville",
+    "county": "Vanderburgh",
+    "zips": 32
+   },
+   {
+    "city": "South Bend",
+    "county": "St. Joseph",
+    "zips": 16
+   },
+   {
+    "city": "Gary",
+    "county": "Lake",
+    "zips": 8
+   },
+   {
+    "city": "Anderson",
+    "county": "Madison",
+    "zips": 6
+   },
+   {
+    "city": "Terre Haute",
+    "county": "Vigo",
+    "zips": 6
+   },
+   {
+    "city": "Muncie",
+    "county": "Delaware",
+    "zips": 5
+   },
+   {
+    "city": "Hammond",
+    "county": "Lake",
+    "zips": 5
+   },
+   {
+    "city": "Lafayette",
+    "county": "Tippecanoe",
+    "zips": 4
+   },
+   {
+    "city": "Elkhart",
+    "county": "Elkhart",
+    "zips": 4
+   },
+   {
+    "city": "Bloomington",
+    "county": "Monroe",
+    "zips": 3
+   }
+  ],
+  "maxPayout": 56.7
+ },
+ "KS": {
+  "zips": 359,
+  "cities": 269,
+  "topCities": [
+   {
+    "city": "Wichita",
+    "county": "Sedgwick",
+    "zips": 22
+   },
+   {
+    "city": "Topeka",
+    "county": "Shawnee",
+    "zips": 19
+   },
+   {
+    "city": "Kansas City",
+    "county": "Wyandotte",
+    "zips": 15
+   },
+   {
+    "city": "Overland Park",
+    "county": "Johnson",
+    "zips": 13
+   },
+   {
+    "city": "Shawnee",
+    "county": "Johnson",
+    "zips": 6
+   },
+   {
+    "city": "Lenexa",
+    "county": "Johnson",
+    "zips": 6
+   },
+   {
+    "city": "Lawrence",
+    "county": "Douglas",
+    "zips": 5
+   },
+   {
+    "city": "Olathe",
+    "county": "Johnson",
+    "zips": 4
+   },
+   {
+    "city": "Mission",
+    "county": "Johnson",
+    "zips": 4
+   },
+   {
+    "city": "Manhattan",
+    "county": "Riley",
+    "zips": 3
+   },
+   {
+    "city": "Leawood",
+    "county": "Johnson",
+    "zips": 3
+   },
+   {
+    "city": "Hutchinson",
+    "county": "Reno",
+    "zips": 2
+   }
+  ],
+  "maxPayout": 57.75
+ },
+ "KY": {
+  "zips": 394,
+  "cities": 309,
+  "topCities": [
+   {
+    "city": "Lexington",
+    "county": "Fayette",
+    "zips": 39
+   },
+   {
+    "city": "Louisville",
+    "county": "Jefferson",
+    "zips": 15
+   },
+   {
+    "city": "Covington",
+    "county": "Kenton",
+    "zips": 5
+   },
+   {
+    "city": "Bowling Green",
+    "county": "Warren",
+    "zips": 4
+   },
+   {
+    "city": "Owensboro",
+    "county": "Daviess",
+    "zips": 4
+   },
+   {
+    "city": "Newport",
+    "county": "Campbell",
+    "zips": 3
+   },
+   {
+    "city": "Somerset",
+    "county": "Pulaski",
+    "zips": 3
+   },
+   {
+    "city": "Richmond",
+    "county": "Madison",
+    "zips": 2
+   },
+   {
+    "city": "Florence",
+    "county": "Boone",
+    "zips": 2
+   },
+   {
+    "city": "Nicholasville",
+    "county": "Jessamine",
+    "zips": 2
+   },
+   {
+    "city": "Hopkinsville",
+    "county": "Christian",
+    "zips": 2
+   },
+   {
+    "city": "Frankfort",
+    "county": "Franklin",
+    "zips": 2
+   }
+  ],
+  "maxPayout": 56.7
+ },
+ "LA": {
+  "zips": 185,
+  "cities": 77,
+  "topCities": [
+   {
+    "city": "New Orleans",
+    "county": "Orleans",
+    "zips": 46
+   },
+   {
+    "city": "Baton Rouge",
+    "county": "East Baton Rouge",
+    "zips": 23
+   },
+   {
+    "city": "Metairie",
+    "county": "Jefferson",
+    "zips": 11
+   },
+   {
+    "city": "Shreveport",
+    "county": "Caddo",
+    "zips": 6
+   },
+   {
+    "city": "Slidell",
+    "county": "St. Tammany",
+    "zips": 5
+   },
+   {
+    "city": "Lafayette",
+    "county": "Lafayette",
+    "zips": 4
+   },
+   {
+    "city": "Houma",
+    "county": "Terrebonne",
+    "zips": 4
+   },
+   {
+    "city": "Kenner",
+    "county": "Jefferson",
+    "zips": 4
+   },
+   {
+    "city": "Mandeville",
+    "county": "St. Tammany",
+    "zips": 3
+   },
+   {
+    "city": "Alexandria",
+    "county": "Rapides",
+    "zips": 3
+   },
+   {
+    "city": "Hammond",
+    "county": "Tangipahoa",
+    "zips": 3
+   },
+   {
+    "city": "Covington",
+    "county": "St. Tammany",
+    "zips": 3
+   }
+  ],
+  "maxPayout": 41.11
+ },
+ "MA": {
+  "zips": 634,
+  "cities": 479,
+  "topCities": [
+   {
+    "city": "Boston",
+    "county": "Suffolk",
+    "zips": 36
+   },
+   {
+    "city": "Worcester",
+    "county": "Worcester",
+    "zips": 15
+   },
+   {
+    "city": "Springfield",
+    "county": "Hampden",
+    "zips": 12
+   },
+   {
+    "city": "New Bedford",
+    "county": "Bristol",
+    "zips": 6
+   },
+   {
+    "city": "Cambridge",
+    "county": "Middlesex",
+    "zips": 6
+   },
+   {
+    "city": "Lynn",
+    "county": "Essex",
+    "zips": 6
+   },
+   {
+    "city": "Lowell",
+    "county": "Middlesex",
+    "zips": 5
+   },
+   {
+    "city": "Brockton",
+    "county": "Plymouth",
+    "zips": 5
+   },
+   {
+    "city": "Fall River",
+    "county": "Bristol",
+    "zips": 5
+   },
+   {
+    "city": "Framingham",
+    "county": "Middlesex",
+    "zips": 5
+   },
+   {
+    "city": "Andover",
+    "county": null,
+    "zips": 5
+   },
+   {
+    "city": "Quincy",
+    "county": "Norfolk",
+    "zips": 4
+   }
+  ],
+  "maxPayout": 66.15
+ },
+ "MD": {
+  "zips": 601,
+  "cities": 429,
+  "topCities": [
+   {
+    "city": "Baltimore",
+    "county": "Baltimore",
+    "zips": 40
+   },
+   {
+    "city": "Silver Spring",
+    "county": "Montgomery",
+    "zips": 16
+   },
+   {
+    "city": "Bethesda",
+    "county": "Montgomery",
+    "zips": 11
+   },
+   {
+    "city": "Gaithersburg",
+    "county": "Montgomery",
+    "zips": 9
+   },
+   {
+    "city": "Rockville",
+    "county": "Montgomery",
+    "zips": 8
+   },
+   {
+    "city": "Annapolis",
+    "county": "Anne Arundel",
+    "zips": 8
+   },
+   {
+    "city": "Bowie",
+    "county": "Prince George's",
+    "zips": 7
+   },
+   {
+    "city": "Laurel",
+    "county": "Prince George's",
+    "zips": 7
+   },
+   {
+    "city": "Hyattsville",
+    "county": "Prince George's",
+    "zips": 7
+   },
+   {
+    "city": "Hagerstown",
+    "county": "Washington",
+    "zips": 6
+   },
+   {
+    "city": "Frederick",
+    "county": "Frederick",
+    "zips": 6
+   },
+   {
+    "city": "Towson",
+    "county": "Baltimore",
+    "zips": 5
+   }
+  ],
+  "maxPayout": 84
+ },
+ "ME": {
+  "zips": 163,
+  "cities": 148,
+  "topCities": [
+   {
+    "city": "Portland",
+    "county": "Cumberland",
+    "zips": 9
+   },
+   {
+    "city": "Freeport",
+    "county": null,
+    "zips": 3
+   },
+   {
+    "city": "South Portland",
+    "county": "Cumberland",
+    "zips": 2
+   },
+   {
+    "city": "Biddeford",
+    "county": "York",
+    "zips": 2
+   },
+   {
+    "city": "Westbrook",
+    "county": "Cumberland",
+    "zips": 2
+   },
+   {
+    "city": "Augusta",
+    "county": "Kennebec",
+    "zips": 2
+   },
+   {
+    "city": "Scarborough",
+    "county": "Cumberland",
+    "zips": 2
+   },
+   {
+    "city": "Cliff Island",
+    "county": "Cumberland",
+    "zips": 1
+   },
+   {
+    "city": "Peaks Island",
+    "county": "Cumberland",
+    "zips": 1
+   },
+   {
+    "city": "Lewiston",
+    "county": "Androscoggin",
+    "zips": 1
+   },
+   {
+    "city": "Bangor",
+    "county": "Penobscot",
+    "zips": 1
+   },
+   {
+    "city": "Auburn",
+    "county": "Androscoggin",
+    "zips": 1
+   }
+  ],
+  "maxPayout": 56
+ },
+ "MI": {
+  "zips": 640,
+  "cities": 476,
+  "topCities": [
+   {
+    "city": "Detroit",
+    "county": "Wayne",
+    "zips": 26
+   },
+   {
+    "city": "Grand Rapids",
+    "county": "Kent",
+    "zips": 13
+   },
+   {
+    "city": "Lansing",
+    "county": "Ingham",
+    "zips": 10
+   },
+   {
+    "city": "Flint",
+    "county": "Genesee",
+    "zips": 9
+   },
+   {
+    "city": "Kalamazoo",
+    "county": "Kalamazoo",
+    "zips": 6
+   },
+   {
+    "city": "Warren",
+    "county": "Macomb",
+    "zips": 6
+   },
+   {
+    "city": "Farmington",
+    "county": "Oakland",
+    "zips": 6
+   },
+   {
+    "city": "Ann Arbor",
+    "county": "Washtenaw",
+    "zips": 5
+   },
+   {
+    "city": "Muskegon",
+    "county": "Muskegon",
+    "zips": 5
+   },
+   {
+    "city": "Saginaw",
+    "county": "Saginaw",
+    "zips": 5
+   },
+   {
+    "city": "Dearborn",
+    "county": "Wayne",
+    "zips": 5
+   },
+   {
+    "city": "Troy",
+    "county": "Oakland",
+    "zips": 5
+   }
+  ],
+  "maxPayout": 58.8
+ },
+ "MN": {
+  "zips": 638,
+  "cities": 479,
+  "topCities": [
+   {
+    "city": "Minneapolis",
+    "county": "Hennepin",
+    "zips": 68
+   },
+   {
+    "city": "Saint Paul",
+    "county": "Ramsey",
+    "zips": 43
+   },
+   {
+    "city": "Saint Cloud",
+    "county": "Stearns",
+    "zips": 11
+   },
+   {
+    "city": "Maple Plain",
+    "county": "Hennepin",
+    "zips": 11
+   },
+   {
+    "city": "Rochester",
+    "county": "Olmsted",
+    "zips": 6
+   },
+   {
+    "city": "Loretto",
+    "county": "Hennepin",
+    "zips": 6
+   },
+   {
+    "city": "Moorhead",
+    "county": "Clay",
+    "zips": 4
+   },
+   {
+    "city": "Eden Prairie",
+    "county": "Hennepin",
+    "zips": 3
+   },
+   {
+    "city": "Burnsville",
+    "county": "Dakota",
+    "zips": 2
+   },
+   {
+    "city": "Mankato",
+    "county": "Blue Earth",
+    "zips": 2
+   },
+   {
+    "city": "Inver Grove Heights",
+    "county": "Dakota",
+    "zips": 2
+   },
+   {
+    "city": "Stillwater",
+    "county": "Washington",
+    "zips": 2
+   }
+  ],
+  "maxPayout": 79.63
+ },
+ "MO": {
+  "zips": 436,
+  "cities": 254,
+  "topCities": [
+   {
+    "city": "Kansas City",
+    "county": "Jackson",
+    "zips": 71
+   },
+   {
+    "city": "Saint Louis",
+    "county": "St. Louis",
+    "zips": 68
+   },
+   {
+    "city": "Independence",
+    "county": "Jackson",
+    "zips": 9
+   },
+   {
+    "city": "Springfield",
+    "county": "Greene",
+    "zips": 7
+   },
+   {
+    "city": "Lees Summit",
+    "county": "Jackson",
+    "zips": 7
+   },
+   {
+    "city": "Saint Joseph",
+    "county": "Buchanan",
+    "zips": 6
+   },
+   {
+    "city": "Saint Charles",
+    "county": "St. Charles",
+    "zips": 4
+   },
+   {
+    "city": "Florissant",
+    "county": "St. Louis",
+    "zips": 4
+   },
+   {
+    "city": "Ballwin",
+    "county": "St. Louis",
+    "zips": 4
+   },
+   {
+    "city": "Blue Springs",
+    "county": "Jackson",
+    "zips": 3
+   },
+   {
+    "city": "Chesterfield",
+    "county": "St. Louis",
+    "zips": 3
+   },
+   {
+    "city": "Columbia",
+    "county": "Boone",
+    "zips": 2
+   }
+  ],
+  "maxPayout": 67.38
+ },
+ "MS": {
+  "zips": 275,
+  "cities": 213,
+  "topCities": [
+   {
+    "city": "Jackson",
+    "county": "Hinds",
+    "zips": 25
+   },
+   {
+    "city": "Gulfport",
+    "county": "Harrison",
+    "zips": 6
+   },
+   {
+    "city": "Biloxi",
+    "county": "Harrison",
+    "zips": 6
+   },
+   {
+    "city": "Pascagoula",
+    "county": "Jackson",
+    "zips": 5
+   },
+   {
+    "city": "Hattiesburg",
+    "county": "Forrest",
+    "zips": 3
+   },
+   {
+    "city": "Meridian",
+    "county": "Lauderdale",
+    "zips": 3
+   },
+   {
+    "city": "Clinton",
+    "county": "Hinds",
+    "zips": 3
+   },
+   {
+    "city": "Brandon",
+    "county": "Rankin",
+    "zips": 3
+   },
+   {
+    "city": "Columbus",
+    "county": "Lowndes",
+    "zips": 3
+   },
+   {
+    "city": "Vicksburg",
+    "county": "Warren",
+    "zips": 3
+   },
+   {
+    "city": "Laurel",
+    "county": "Jones",
+    "zips": 3
+   },
+   {
+    "city": "Tupelo",
+    "county": "Lee",
+    "zips": 2
+   }
+  ],
+  "maxPayout": 50.4
+ },
+ "MT": {
+  "zips": 253,
+  "cities": 213,
+  "topCities": [
+   {
+    "city": "Billings",
+    "county": "Yellowstone",
+    "zips": 14
+   },
+   {
+    "city": "Missoula",
+    "county": "Missoula",
+    "zips": 8
+   },
+   {
+    "city": "Helena",
+    "county": "Lewis and Clark",
+    "zips": 8
+   },
+   {
+    "city": "Bozeman",
+    "county": "Gallatin",
+    "zips": 6
+   },
+   {
+    "city": "Butte",
+    "county": "Silver Bow",
+    "zips": 5
+   },
+   {
+    "city": "Kalispell",
+    "county": "Flathead",
+    "zips": 3
+   },
+   {
+    "city": "Great Falls",
+    "county": "Cascade",
+    "zips": 2
+   },
+   {
+    "city": "Roundup",
+    "county": "Musselshell",
+    "zips": 2
+   },
+   {
+    "city": "Divide",
+    "county": "Silver Bow",
+    "zips": 1
+   },
+   {
+    "city": "Ramsay",
+    "county": "Silver Bow",
+    "zips": 1
+   },
+   {
+    "city": "Belgrade",
+    "county": "Gallatin",
+    "zips": 1
+   },
+   {
+    "city": "Anaconda",
+    "county": "Deer Lodge",
+    "zips": 1
+   }
+  ],
+  "maxPayout": 44.1
+ },
+ "NC": {
+  "zips": 1000,
+  "cities": 682,
+  "topCities": [
+   {
+    "city": "Charlotte",
+    "county": "Mecklenburg",
+    "zips": 74
+   },
+   {
+    "city": "Raleigh",
+    "county": "Wake",
+    "zips": 44
+   },
+   {
+    "city": "Greensboro",
+    "county": "Guilford",
+    "zips": 28
+   },
+   {
+    "city": "Winston-Salem",
+    "county": "Forsyth",
+    "zips": 25
+   },
+   {
+    "city": "Durham",
+    "county": "Durham",
+    "zips": 16
+   },
+   {
+    "city": "Asheville",
+    "county": "Buncombe",
+    "zips": 11
+   },
+   {
+    "city": "Fayetteville",
+    "county": "Cumberland",
+    "zips": 10
+   },
+   {
+    "city": "Wilmington",
+    "county": "New Hanover",
+    "zips": 9
+   },
+   {
+    "city": "High Point",
+    "county": "Guilford",
+    "zips": 7
+   },
+   {
+    "city": "Gastonia",
+    "county": "Gaston",
+    "zips": 5
+   },
+   {
+    "city": "Cary",
+    "county": "Wake",
+    "zips": 5
+   },
+   {
+    "city": "Greenville",
+    "county": "Pitt",
+    "zips": 5
+   }
+  ],
+  "maxPayout": 61.25
+ },
+ "ND": {
+  "zips": 164,
+  "cities": 139,
+  "topCities": [
+   {
+    "city": "Fargo",
+    "county": "Cass",
+    "zips": 13
+   },
+   {
+    "city": "Grand Forks",
+    "county": "Grand Forks",
+    "zips": 6
+   },
+   {
+    "city": "Bismarck",
+    "county": "Burleigh",
+    "zips": 3
+   },
+   {
+    "city": "Jamestown",
+    "county": "Stutsman",
+    "zips": 3
+   },
+   {
+    "city": "Wahpeton",
+    "county": "Richland",
+    "zips": 3
+   },
+   {
+    "city": "Minot",
+    "county": "Ward",
+    "zips": 2
+   },
+   {
+    "city": "Grand Forks Afb",
+    "county": "Grand Forks",
+    "zips": 2
+   },
+   {
+    "city": "West Fargo",
+    "county": "Cass",
+    "zips": 1
+   },
+   {
+    "city": "Williston",
+    "county": "Williams",
+    "zips": 1
+   },
+   {
+    "city": "Valley City",
+    "county": "Barnes",
+    "zips": 1
+   },
+   {
+    "city": "Horace",
+    "county": "Cass",
+    "zips": 1
+   },
+   {
+    "city": "Casselton",
+    "county": "Cass",
+    "zips": 1
+   }
+  ],
+  "maxPayout": 28.54
+ },
+ "NE": {
+  "zips": 308,
+  "cities": 226,
+  "topCities": [
+   {
+    "city": "Omaha",
+    "county": "Douglas",
+    "zips": 48
+   },
+   {
+    "city": "Lincoln",
+    "county": "Lancaster",
+    "zips": 29
+   },
+   {
+    "city": "Bellevue",
+    "county": "Sarpy",
+    "zips": 3
+   },
+   {
+    "city": "Grand Island",
+    "county": "Hall",
+    "zips": 2
+   },
+   {
+    "city": "Fremont",
+    "county": "Dodge",
+    "zips": 2
+   },
+   {
+    "city": "Norfolk",
+    "county": "Madison",
+    "zips": 2
+   },
+   {
+    "city": "Papillion",
+    "county": "Sarpy",
+    "zips": 2
+   },
+   {
+    "city": "Blair",
+    "county": "Washington",
+    "zips": 2
+   },
+   {
+    "city": "Elkhorn",
+    "county": "Douglas",
+    "zips": 1
+   },
+   {
+    "city": "Kearney",
+    "county": "Buffalo",
+    "zips": 1
+   },
+   {
+    "city": "Hastings",
+    "county": "Adams",
+    "zips": 1
+   },
+   {
+    "city": "Columbus",
+    "county": "Platte",
+    "zips": 1
+   }
+  ],
+  "maxPayout": 63.7
+ },
+ "NH": {
+  "zips": 272,
+  "cities": 244,
+  "topCities": [
+   {
+    "city": "Manchester",
+    "county": "Hillsborough",
+    "zips": 8
+   },
+   {
+    "city": "Nashua",
+    "county": "Hillsborough",
+    "zips": 5
+   },
+   {
+    "city": "Portsmouth",
+    "county": "Rockingham",
+    "zips": 4
+   },
+   {
+    "city": "Concord",
+    "county": "Merrimack",
+    "zips": 4
+   },
+   {
+    "city": "Rochester",
+    "county": "Strafford",
+    "zips": 4
+   },
+   {
+    "city": "Dover",
+    "county": "Strafford",
+    "zips": 3
+   },
+   {
+    "city": "Tilton",
+    "county": "Belknap",
+    "zips": 3
+   },
+   {
+    "city": "Keene",
+    "county": "Cheshire",
+    "zips": 2
+   },
+   {
+    "city": "Laconia",
+    "county": "Belknap",
+    "zips": 2
+   },
+   {
+    "city": "Lebanon",
+    "county": "Grafton",
+    "zips": 2
+   },
+   {
+    "city": "Hampton",
+    "county": "Rockingham",
+    "zips": 2
+   },
+   {
+    "city": "West Lebanon",
+    "county": "Grafton",
+    "zips": 1
+   }
+  ],
+  "maxPayout": 56
+ },
+ "NJ": {
+  "zips": 707,
+  "cities": 569,
+  "topCities": [
+   {
+    "city": "Trenton",
+    "county": "Mercer",
+    "zips": 26
+   },
+   {
+    "city": "Newark",
+    "county": "Essex",
+    "zips": 20
+   },
+   {
+    "city": "Paterson",
+    "county": "Passaic",
+    "zips": 14
+   },
+   {
+    "city": "Jersey City",
+    "county": "Hudson",
+    "zips": 12
+   },
+   {
+    "city": "Clifton",
+    "county": "Passaic",
+    "zips": 5
+   },
+   {
+    "city": "Camden",
+    "county": "Camden",
+    "zips": 5
+   },
+   {
+    "city": "New Brunswick",
+    "county": "Middlesex",
+    "zips": 5
+   },
+   {
+    "city": "Princeton",
+    "county": "Mercer",
+    "zips": 5
+   },
+   {
+    "city": "Toms River",
+    "county": "Ocean",
+    "zips": 5
+   },
+   {
+    "city": "Edison",
+    "county": null,
+    "zips": 5
+   },
+   {
+    "city": "Elizabeth",
+    "county": "Union",
+    "zips": 4
+   },
+   {
+    "city": "Plainfield",
+    "county": "Union",
+    "zips": 4
+   }
+  ],
+  "maxPayout": 170.1
+ },
+ "NM": {
+  "zips": 80,
+  "cities": 52,
+  "topCities": [
+   {
+    "city": "Albuquerque",
+    "county": "Bernalillo",
+    "zips": 22
+   },
+   {
+    "city": "Santa Fe",
+    "county": "Santa Fe",
+    "zips": 5
+   },
+   {
+    "city": "Las Cruces",
+    "county": "Doña Ana",
+    "zips": 2
+   },
+   {
+    "city": "Rio Rancho",
+    "county": "Sandoval",
+    "zips": 2
+   },
+   {
+    "city": "Espanola",
+    "county": "Rio Arriba",
+    "zips": 2
+   },
+   {
+    "city": "Roswell",
+    "county": "Chaves",
+    "zips": 1
+   },
+   {
+    "city": "Farmington",
+    "county": "San Juan",
+    "zips": 1
+   },
+   {
+    "city": "Hobbs",
+    "county": "Lea",
+    "zips": 1
+   },
+   {
+    "city": "Carlsbad",
+    "county": "Eddy",
+    "zips": 1
+   },
+   {
+    "city": "Alamogordo",
+    "county": "Otero",
+    "zips": 1
+   },
+   {
+    "city": "Gallup",
+    "county": "McKinley",
+    "zips": 1
+   },
+   {
+    "city": "Los Lunas",
+    "county": "Valencia",
+    "zips": 1
+   }
+  ],
+  "maxPayout": 39.38
+ },
+ "NV": {
+  "zips": 201,
+  "cities": 81,
+  "topCities": [
+   {
+    "city": "Las Vegas",
+    "county": "Clark",
+    "zips": 77
+   },
+   {
+    "city": "Henderson",
+    "county": "Clark",
+    "zips": 12
+   },
+   {
+    "city": "North Las Vegas",
+    "county": "Clark",
+    "zips": 10
+   },
+   {
+    "city": "Reno",
+    "county": "Washoe",
+    "zips": 9
+   },
+   {
+    "city": "Carson City",
+    "county": "Carson City",
+    "zips": 4
+   },
+   {
+    "city": "Pahrump",
+    "county": "Nye",
+    "zips": 4
+   },
+   {
+    "city": "Sparks",
+    "county": "Washoe",
+    "zips": 3
+   },
+   {
+    "city": "Mesquite",
+    "county": "Clark",
+    "zips": 2
+   },
+   {
+    "city": "Boulder City",
+    "county": "Clark",
+    "zips": 2
+   },
+   {
+    "city": "Incline Village",
+    "county": "Washoe",
+    "zips": 2
+   },
+   {
+    "city": "Laughlin",
+    "county": "Clark",
+    "zips": 2
+   },
+   {
+    "city": "Gardnerville",
+    "county": "Douglas",
+    "zips": 2
+   }
+  ],
+  "maxPayout": 45.67
+ },
+ "NY": {
+  "zips": 1450,
+  "cities": 1080,
+  "topCities": [
+   {
+    "city": "Albany",
+    "county": "Albany",
+    "zips": 50
+   },
+   {
+    "city": "New York",
+    "county": "Queens",
+    "zips": 48
+   },
+   {
+    "city": "Rochester",
+    "county": "Monroe",
+    "zips": 40
+   },
+   {
+    "city": "Brooklyn",
+    "county": "Kings",
+    "zips": 38
+   },
+   {
+    "city": "Bronx",
+    "county": "Bronx",
+    "zips": 25
+   },
+   {
+    "city": "Buffalo",
+    "county": "Erie",
+    "zips": 16
+   },
+   {
+    "city": "Syracuse",
+    "county": "Onondaga",
+    "zips": 16
+   },
+   {
+    "city": "Jamaica",
+    "county": "Queens",
+    "zips": 14
+   },
+   {
+    "city": "Staten Island",
+    "county": "Richmond",
+    "zips": 13
+   },
+   {
+    "city": "Schenectady",
+    "county": "Schenectady",
+    "zips": 11
+   },
+   {
+    "city": "Flushing",
+    "county": "Queens",
+    "zips": 8
+   },
+   {
+    "city": "White Plains",
+    "county": "Westchester",
+    "zips": 7
+   }
+  ],
+  "maxPayout": 89.78
+ },
+ "OH": {
+  "zips": 1108,
+  "cities": 829,
+  "topCities": [
+   {
+    "city": "Cincinnati",
+    "county": "Hamilton",
+    "zips": 71
+   },
+   {
+    "city": "Dayton",
+    "county": "Montgomery",
+    "zips": 43
+   },
+   {
+    "city": "Columbus",
+    "county": "Franklin",
+    "zips": 32
+   },
+   {
+    "city": "Cleveland",
+    "county": "Cuyahoga",
+    "zips": 31
+   },
+   {
+    "city": "Akron",
+    "county": "Summit",
+    "zips": 24
+   },
+   {
+    "city": "Toledo",
+    "county": "Lucas",
+    "zips": 14
+   },
+   {
+    "city": "Youngstown",
+    "county": "Mahoning",
+    "zips": 13
+   },
+   {
+    "city": "Canton",
+    "county": "Stark",
+    "zips": 13
+   },
+   {
+    "city": "Mansfield",
+    "county": "Richland",
+    "zips": 7
+   },
+   {
+    "city": "Springfield",
+    "county": "Clark",
+    "zips": 6
+   },
+   {
+    "city": "Lima",
+    "county": "Allen",
+    "zips": 4
+   },
+   {
+    "city": "Hamilton",
+    "county": "Butler",
+    "zips": 4
+   }
+  ],
+  "maxPayout": 58.27
+ },
+ "OK": {
+  "zips": 379,
+  "cities": 258,
+  "topCities": [
+   {
+    "city": "Oklahoma City",
+    "county": "Oklahoma",
+    "zips": 75
+   },
+   {
+    "city": "Tulsa",
+    "county": "Tulsa",
+    "zips": 20
+   },
+   {
+    "city": "Norman",
+    "county": "Cleveland",
+    "zips": 6
+   },
+   {
+    "city": "Edmond",
+    "county": "Oklahoma",
+    "zips": 6
+   },
+   {
+    "city": "Lawton",
+    "county": "Comanche",
+    "zips": 4
+   },
+   {
+    "city": "Enid",
+    "county": "Garfield",
+    "zips": 4
+   },
+   {
+    "city": "Broken Arrow",
+    "county": "Tulsa",
+    "zips": 3
+   },
+   {
+    "city": "Shawnee",
+    "county": "Pottawatomie",
+    "zips": 3
+   },
+   {
+    "city": "Duncan",
+    "county": "Stephens",
+    "zips": 3
+   },
+   {
+    "city": "Yukon",
+    "county": "Canadian",
+    "zips": 2
+   },
+   {
+    "city": "Ponca City",
+    "county": "Kay",
+    "zips": 2
+   },
+   {
+    "city": "Claremore",
+    "county": "Rogers",
+    "zips": 2
+   }
+  ],
+  "maxPayout": 63.31
+ },
+ "OR": {
+  "zips": 470,
+  "cities": 362,
+  "topCities": [
+   {
+    "city": "Portland",
+    "county": "Multnomah",
+    "zips": 60
+   },
+   {
+    "city": "Salem",
+    "county": "Marion",
+    "zips": 14
+   },
+   {
+    "city": "Beaverton",
+    "county": "Washington",
+    "zips": 10
+   },
+   {
+    "city": "Eugene",
+    "county": "Lane",
+    "zips": 7
+   },
+   {
+    "city": "Bend",
+    "county": "Deschutes",
+    "zips": 6
+   },
+   {
+    "city": "Corvallis",
+    "county": "Benton",
+    "zips": 4
+   },
+   {
+    "city": "Hillsboro",
+    "county": "Washington",
+    "zips": 3
+   },
+   {
+    "city": "Springfield",
+    "county": "Lane",
+    "zips": 3
+   },
+   {
+    "city": "Grants Pass",
+    "county": "Josephine",
+    "zips": 3
+   },
+   {
+    "city": "Klamath Falls",
+    "county": "Klamath",
+    "zips": 3
+   },
+   {
+    "city": "Medford",
+    "county": "Jackson",
+    "zips": 2
+   },
+   {
+    "city": "Gresham",
+    "county": "Multnomah",
+    "zips": 2
+   }
+  ],
+  "maxPayout": 64.58
+ },
+ "PA": {
+  "zips": 1725,
+  "cities": 1460,
+  "topCities": [
+   {
+    "city": "Philadelphia",
+    "county": "Philadelphia",
+    "zips": 53
+   },
+   {
+    "city": "Pittsburgh",
+    "county": "Allegheny",
+    "zips": 46
+   },
+   {
+    "city": "Wilkes Barre",
+    "county": "Luzerne",
+    "zips": 14
+   },
+   {
+    "city": "Scranton",
+    "county": "Lackawanna",
+    "zips": 13
+   },
+   {
+    "city": "Erie",
+    "county": "Erie",
+    "zips": 11
+   },
+   {
+    "city": "Harrisburg",
+    "county": "Dauphin",
+    "zips": 10
+   },
+   {
+    "city": "Reading",
+    "county": "Berks",
+    "zips": 10
+   },
+   {
+    "city": "Johnstown",
+    "county": "Cambria",
+    "zips": 8
+   },
+   {
+    "city": "Allentown",
+    "county": "Lehigh",
+    "zips": 7
+   },
+   {
+    "city": "York",
+    "county": "York",
+    "zips": 7
+   },
+   {
+    "city": "Valley Forge",
+    "county": "Montgomery",
+    "zips": 7
+   },
+   {
+    "city": "Bethlehem",
+    "county": "Northampton",
+    "zips": 6
+   }
+  ],
+  "maxPayout": 102.38
+ },
+ "RI": {
+  "zips": 85,
+  "cities": 68,
+  "topCities": [
+   {
+    "city": "Providence",
+    "county": "Providence",
+    "zips": 10
+   },
+   {
+    "city": "Warwick",
+    "county": "Kent",
+    "zips": 4
+   },
+   {
+    "city": "Cranston",
+    "county": "Providence",
+    "zips": 3
+   },
+   {
+    "city": "Pawtucket",
+    "county": "Providence",
+    "zips": 3
+   },
+   {
+    "city": "Newport",
+    "county": "Newport",
+    "zips": 2
+   },
+   {
+    "city": "Fiskeville",
+    "county": "Providence",
+    "zips": 1
+   },
+   {
+    "city": "Hope",
+    "county": "Providence",
+    "zips": 1
+   },
+   {
+    "city": "East Greenwich",
+    "county": "Kent",
+    "zips": 1
+   },
+   {
+    "city": "East Providence",
+    "county": "Providence",
+    "zips": 1
+   },
+   {
+    "city": "Riverside",
+    "county": "Providence",
+    "zips": 1
+   },
+   {
+    "city": "Rumford",
+    "county": "Providence",
+    "zips": 1
+   },
+   {
+    "city": "Woonsocket",
+    "county": "Providence",
+    "zips": 1
+   }
+  ],
+  "maxPayout": 45.67
+ },
+ "SC": {
+  "zips": 511,
+  "cities": 357,
+  "topCities": [
+   {
+    "city": "Columbia",
+    "county": "Richland",
+    "zips": 34
+   },
+   {
+    "city": "Greenville",
+    "county": "Greenville",
+    "zips": 17
+   },
+   {
+    "city": "Charleston",
+    "county": "Charleston",
+    "zips": 16
+   },
+   {
+    "city": "Spartanburg",
+    "county": "Spartanburg",
+    "zips": 8
+   },
+   {
+    "city": "Florence",
+    "county": "Florence",
+    "zips": 6
+   },
+   {
+    "city": "Beaufort",
+    "county": "Beaufort",
+    "zips": 6
+   },
+   {
+    "city": "Aiken",
+    "county": "Aiken",
+    "zips": 6
+   },
+   {
+    "city": "Anderson",
+    "county": "Anderson",
+    "zips": 6
+   },
+   {
+    "city": "Myrtle Beach",
+    "county": "Horry",
+    "zips": 5
+   },
+   {
+    "city": "Rock Hill",
+    "county": "York",
+    "zips": 5
+   },
+   {
+    "city": "North Charleston",
+    "county": "Charleston",
+    "zips": 5
+   },
+   {
+    "city": "Sumter",
+    "county": "Sumter",
+    "zips": 4
+   }
+  ],
+  "maxPayout": 61.25
+ },
+ "SD": {
+  "zips": 166,
+  "cities": 148,
+  "topCities": [
+   {
+    "city": "Sioux Falls",
+    "county": "Minnehaha",
+    "zips": 15
+   },
+   {
+    "city": "Rapid City",
+    "county": "Pennington",
+    "zips": 4
+   },
+   {
+    "city": "Aberdeen",
+    "county": "Brown",
+    "zips": 2
+   },
+   {
+    "city": "Brookings",
+    "county": "Brookings",
+    "zips": 1
+   },
+   {
+    "city": "Watertown",
+    "county": "Codington",
+    "zips": 1
+   },
+   {
+    "city": "Mitchell",
+    "county": "Davison",
+    "zips": 1
+   },
+   {
+    "city": "Yankton",
+    "county": "Yankton",
+    "zips": 1
+   },
+   {
+    "city": "Huron",
+    "county": "Beadle",
+    "zips": 1
+   },
+   {
+    "city": "Pierre",
+    "county": "Hughes",
+    "zips": 1
+   },
+   {
+    "city": "Spearfish",
+    "county": "Lawrence",
+    "zips": 1
+   },
+   {
+    "city": "Vermillion",
+    "county": "Clay",
+    "zips": 1
+   },
+   {
+    "city": "Brandon",
+    "county": "Minnehaha",
+    "zips": 1
+   }
+  ],
+  "maxPayout": 29.78
+ },
+ "TN": {
+  "zips": 600,
+  "cities": 436,
+  "topCities": [
+   {
+    "city": "Nashville",
+    "county": "Davidson",
+    "zips": 39
+   },
+   {
+    "city": "Knoxville",
+    "county": "Knox",
+    "zips": 31
+   },
+   {
+    "city": "Memphis",
+    "county": "Shelby",
+    "zips": 18
+   },
+   {
+    "city": "Chattanooga",
+    "county": "Hamilton",
+    "zips": 15
+   },
+   {
+    "city": "Murfreesboro",
+    "county": "Rutherford",
+    "zips": 7
+   },
+   {
+    "city": "Kingsport",
+    "county": "Sullivan",
+    "zips": 5
+   },
+   {
+    "city": "Franklin",
+    "county": "Williamson",
+    "zips": 5
+   },
+   {
+    "city": "Cleveland",
+    "county": "Bradley",
+    "zips": 5
+   },
+   {
+    "city": "Cookeville",
+    "county": "Putnam",
+    "zips": 5
+   },
+   {
+    "city": "Crossville",
+    "county": "Cumberland",
+    "zips": 5
+   },
+   {
+    "city": "Clarksville",
+    "county": "Montgomery",
+    "zips": 4
+   },
+   {
+    "city": "Johnson City",
+    "county": "Washington",
+    "zips": 4
+   }
+  ],
+  "maxPayout": 61.25
+ },
+ "TX": {
+  "zips": 1448,
+  "cities": 632,
+  "topCities": [
+   {
+    "city": "Houston",
+    "county": "Harris",
+    "zips": 178
+   },
+   {
+    "city": "Dallas",
+    "county": "Dallas",
+    "zips": 105
+   },
+   {
+    "city": "San Antonio",
+    "county": "Bexar",
+    "zips": 83
+   },
+   {
+    "city": "Austin",
+    "county": "Travis",
+    "zips": 74
+   },
+   {
+    "city": "Fort Worth",
+    "county": "Tarrant",
+    "zips": 56
+   },
+   {
+    "city": "Arlington",
+    "county": "Tarrant",
+    "zips": 19
+   },
+   {
+    "city": "El Paso",
+    "county": "El Paso",
+    "zips": 18
+   },
+   {
+    "city": "Waco",
+    "county": "McLennan",
+    "zips": 16
+   },
+   {
+    "city": "Beaumont",
+    "county": "Jefferson",
+    "zips": 13
+   },
+   {
+    "city": "Irving",
+    "county": "Dallas",
+    "zips": 12
+   },
+   {
+    "city": "Spring",
+    "county": "Harris",
+    "zips": 12
+   },
+   {
+    "city": "Denton",
+    "county": "Denton",
+    "zips": 10
+   }
+  ],
+  "maxPayout": 166.25
+ },
+ "UT": {
+  "zips": 318,
+  "cities": 226,
+  "topCities": [
+   {
+    "city": "Salt Lake City",
+    "county": "Salt Lake",
+    "zips": 52
+   },
+   {
+    "city": "Ogden",
+    "county": "Weber",
+    "zips": 13
+   },
+   {
+    "city": "Sandy",
+    "county": "Salt Lake",
+    "zips": 6
+   },
+   {
+    "city": "Provo",
+    "county": "Utah",
+    "zips": 5
+   },
+   {
+    "city": "Saint George",
+    "county": "Washington",
+    "zips": 4
+   },
+   {
+    "city": "Logan",
+    "county": "Cache",
+    "zips": 4
+   },
+   {
+    "city": "Orem",
+    "county": "Utah",
+    "zips": 4
+   },
+   {
+    "city": "West Valley City",
+    "county": "Salt Lake",
+    "zips": 3
+   },
+   {
+    "city": "West Jordan",
+    "county": "Salt Lake",
+    "zips": 3
+   },
+   {
+    "city": "Clearfield",
+    "county": "Davis",
+    "zips": 3
+   },
+   {
+    "city": "Layton",
+    "county": "Davis",
+    "zips": 2
+   },
+   {
+    "city": "South Jordan",
+    "county": "Salt Lake",
+    "zips": 2
+   }
+  ],
+  "maxPayout": 43.75
+ },
+ "VA": {
+  "zips": 934,
+  "cities": 581,
+  "topCities": [
+   {
+    "city": "Roanoke",
+    "county": "Roanoke",
+    "zips": 41
+   },
+   {
+    "city": "Richmond",
+    "county": "Richmond",
+    "zips": 39
+   },
+   {
+    "city": "Arlington",
+    "county": "Arlington",
+    "zips": 27
+   },
+   {
+    "city": "Norfolk",
+    "county": "Norfolk",
+    "zips": 21
+   },
+   {
+    "city": "Alexandria",
+    "county": "Alexandria",
+    "zips": 21
+   },
+   {
+    "city": "Virginia Beach",
+    "county": "Virginia Beach",
+    "zips": 20
+   },
+   {
+    "city": "Hampton",
+    "county": "Hampton",
+    "zips": 11
+   },
+   {
+    "city": "Henrico",
+    "county": "Henrico",
+    "zips": 11
+   },
+   {
+    "city": "Newport News",
+    "county": "Newport News",
+    "zips": 10
+   },
+   {
+    "city": "Chesapeake",
+    "county": "Chesapeake",
+    "zips": 9
+   },
+   {
+    "city": "Springfield",
+    "county": "Fairfax",
+    "zips": 9
+   },
+   {
+    "city": "Fairfax",
+    "county": "Fairfax",
+    "zips": 9
+   }
+  ],
+  "maxPayout": 63
+ },
+ "VT": {
+  "zips": 139,
+  "cities": 131,
+  "topCities": [
+   {
+    "city": "Burlington",
+    "county": "Chittenden",
+    "zips": 3
+   },
+   {
+    "city": "Montpelier",
+    "county": "Washington",
+    "zips": 3
+   },
+   {
+    "city": "Colchester",
+    "county": null,
+    "zips": 3
+   },
+   {
+    "city": "Brattleboro",
+    "county": "Windham",
+    "zips": 2
+   },
+   {
+    "city": "Waterbury",
+    "county": "Chittenden",
+    "zips": 2
+   },
+   {
+    "city": "South Burlington",
+    "county": "Chittenden",
+    "zips": 1
+   },
+   {
+    "city": "Rutland",
+    "county": "Rutland",
+    "zips": 1
+   },
+   {
+    "city": "Essex Junction",
+    "county": "Chittenden",
+    "zips": 1
+   },
+   {
+    "city": "Barre",
+    "county": "Washington",
+    "zips": 1
+   },
+   {
+    "city": "Winooski",
+    "county": "Chittenden",
+    "zips": 1
+   },
+   {
+    "city": "Saint Albans",
+    "county": "Franklin",
+    "zips": 1
+   },
+   {
+    "city": "Newport",
+    "county": "Orleans",
+    "zips": 1
+   }
+  ],
+  "maxPayout": 31.94
+ },
+ "WA": {
+  "zips": 686,
+  "cities": 461,
+  "topCities": [
+   {
+    "city": "Seattle",
+    "county": "King",
+    "zips": 59
+   },
+   {
+    "city": "Tacoma",
+    "county": "Pierce",
+    "zips": 35
+   },
+   {
+    "city": "Spokane",
+    "county": "Spokane",
+    "zips": 28
+   },
+   {
+    "city": "Vancouver",
+    "county": "Clark",
+    "zips": 14
+   },
+   {
+    "city": "Olympia",
+    "county": "Thurston",
+    "zips": 11
+   },
+   {
+    "city": "Bellevue",
+    "county": "King",
+    "zips": 7
+   },
+   {
+    "city": "Yakima",
+    "county": "Yakima",
+    "zips": 7
+   },
+   {
+    "city": "Kent",
+    "county": "King",
+    "zips": 7
+   },
+   {
+    "city": "Everett",
+    "county": "Snohomish",
+    "zips": 7
+   },
+   {
+    "city": "Bremerton",
+    "county": "Kitsap",
+    "zips": 5
+   },
+   {
+    "city": "Bellingham",
+    "county": "Whatcom",
+    "zips": 5
+   },
+   {
+    "city": "Renton",
+    "county": "King",
+    "zips": 5
+   }
+  ],
+  "maxPayout": 78.75
+ },
+ "WI": {
+  "zips": 441,
+  "cities": 334,
+  "topCities": [
+   {
+    "city": "Madison",
+    "county": "Dane",
+    "zips": 35
+   },
+   {
+    "city": "Milwaukee",
+    "county": "Milwaukee",
+    "zips": 30
+   },
+   {
+    "city": "Racine",
+    "county": "Racine",
+    "zips": 8
+   },
+   {
+    "city": "Green Bay",
+    "county": "Brown",
+    "zips": 7
+   },
+   {
+    "city": "Kenosha",
+    "county": "Kenosha",
+    "zips": 5
+   },
+   {
+    "city": "Appleton",
+    "county": "Outagamie",
+    "zips": 4
+   },
+   {
+    "city": "Janesville",
+    "county": "Rock",
+    "zips": 4
+   },
+   {
+    "city": "Waukesha",
+    "county": "Waukesha",
+    "zips": 4
+   },
+   {
+    "city": "Sheboygan",
+    "county": "Sheboygan",
+    "zips": 3
+   },
+   {
+    "city": "Fond Du Lac",
+    "county": "Fond du Lac",
+    "zips": 3
+   },
+   {
+    "city": "Eau Claire",
+    "county": "Eau Claire",
+    "zips": 2
+   },
+   {
+    "city": "Wausau",
+    "county": "Marathon",
+    "zips": 2
+   }
+  ],
+  "maxPayout": 63
+ },
+ "WV": {
+  "zips": 195,
+  "cities": 181,
+  "topCities": [
+   {
+    "city": "Huntington",
+    "county": "Cabell",
+    "zips": 4
+   },
+   {
+    "city": "Charleston",
+    "county": "Kanawha",
+    "zips": 4
+   },
+   {
+    "city": "Martinsburg",
+    "county": "Berkeley",
+    "zips": 4
+   },
+   {
+    "city": "Morgantown",
+    "county": "Monongalia",
+    "zips": 3
+   },
+   {
+    "city": "Parkersburg",
+    "county": "Wood",
+    "zips": 2
+   },
+   {
+    "city": "Fairmont",
+    "county": "Marion",
+    "zips": 2
+   },
+   {
+    "city": "Princeton",
+    "county": "Mercer",
+    "zips": 2
+   },
+   {
+    "city": "Wheeling",
+    "county": "Ohio",
+    "zips": 1
+   },
+   {
+    "city": "Weirton",
+    "county": "Hancock",
+    "zips": 1
+   },
+   {
+    "city": "Beckley",
+    "county": "Raleigh",
+    "zips": 1
+   },
+   {
+    "city": "Clarksburg",
+    "county": "Harrison",
+    "zips": 1
+   },
+   {
+    "city": "Scott Depot",
+    "county": "Putnam",
+    "zips": 1
+   }
+  ],
+  "maxPayout": 44.1
+ },
+ "WY": {
+  "zips": 91,
+  "cities": 79,
+  "topCities": [
+   {
+    "city": "Cheyenne",
+    "county": "Laramie",
+    "zips": 7
+   },
+   {
+    "city": "Casper",
+    "county": "Natrona",
+    "zips": 3
+   },
+   {
+    "city": "Laramie",
+    "county": "Albany",
+    "zips": 3
+   },
+   {
+    "city": "Gillette",
+    "county": "Campbell",
+    "zips": 2
+   },
+   {
+    "city": "Jackson",
+    "county": "Teton",
+    "zips": 2
+   },
+   {
+    "city": "Rock Springs",
+    "county": "Sweetwater",
+    "zips": 1
+   },
+   {
+    "city": "Sheridan",
+    "county": "Sheridan",
+    "zips": 1
+   },
+   {
+    "city": "Evanston",
+    "county": "Uinta",
+    "zips": 1
+   },
+   {
+    "city": "Riverton",
+    "county": "Fremont",
+    "zips": 1
+   },
+   {
+    "city": "Cody",
+    "county": "Park",
+    "zips": 1
+   },
+   {
+    "city": "Rawlins",
+    "county": "Carbon",
+    "zips": 1
+   },
+   {
+    "city": "Powell",
+    "county": "Park",
+    "zips": 1
+   }
+  ],
+  "maxPayout": 29.78
+ }
+}
