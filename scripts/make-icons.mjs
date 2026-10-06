@@ -14,8 +14,8 @@ const mark = (bg = "#1b2b34") => `<svg xmlns="http://www.w3.org/2000/svg" viewBo
 
 const logo = `<svg xmlns="http://www.w3.org/2000/svg" width="600" height="160" viewBox="0 0 600 160">
 <g transform="translate(10,20) scale(3)">${mark().replace(/<\/?svg[^>]*>/g, "")}</g>
-<text x="150" y="92" font-family="Georgia, serif" font-size="72" font-weight="700" fill="#1b2b34">Caliche</text>
-<text x="154" y="130" font-family="Arial, sans-serif" font-size="22" font-weight="700" letter-spacing="9" fill="#1d5f63">PLUMBING</text></svg>`;
+<text x="150" y="92" font-family="Georgia, serif" font-size="72" font-weight="700" fill="#1b2b34">Ridgewise</text>
+<text x="154" y="130" font-family="Arial, sans-serif" font-size="22" font-weight="700" letter-spacing="9" fill="#134f56">ROOFING</text></svg>`;
 
 const out = "public";
 await mkdir(`${out}/brand`, { recursive: true });
@@ -67,13 +67,13 @@ if (!existsSync(`${out}/site.webmanifest`)) {
     `${out}/site.webmanifest`,
     JSON.stringify(
       {
-        name: "Caliche Plumbing",
-        short_name: "Caliche",
+        name: "Ridgewise Roofing",
+        short_name: "Ridgewise",
         icons: [
           { src: "/android-chrome-192x192.png", sizes: "192x192", type: "image/png" },
           { src: "/android-chrome-512x512.png", sizes: "512x512", type: "image/png" },
         ],
-        theme_color: "#1b2b34",
+        theme_color: "#16232e",
         background_color: "#f7f2e8",
         display: "standalone",
         start_url: "/",
