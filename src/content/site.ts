@@ -8,8 +8,8 @@ const TEMP_PHONE_E164 = "+17135550147";
 export const site = {
   name: "Ridgewise Roofing",
   shortName: "Ridgewise",
-  domain: "ridgewiseroofing.com",
-  url: (env("NEXT_PUBLIC_SITE_URL") || "https://ridgewiseroofing.com").replace(/\/$/, ""),
+  domain: "www.ridgewiseroofing.com",
+  url: (env("NEXT_PUBLIC_SITE_URL") || "https://www.ridgewiseroofing.com").replace(/\/$/, ""),
   market: "United States",
   marketLong: "all 50 states and Washington, D.C.",
   stateAbbr: "US",

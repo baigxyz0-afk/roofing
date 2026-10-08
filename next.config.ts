@@ -9,7 +9,6 @@ const config: NextConfig = {
   images: { formats: ["image/avif", "image/webp"], deviceSizes: [390, 640, 828, 1080, 1280, 1600] },
   async redirects() {
     return [
-      { source: "/:path*", has: [{ type: "host", value: "www.ridgewiseroofing.com" }], destination: "https://ridgewiseroofing.com/:path*", permanent: true },
       ...redirects,
     ];
   },
