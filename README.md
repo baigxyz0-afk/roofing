@@ -16,7 +16,7 @@ This site was built from the Local Service Lead-Gen Website Playbook (`docs/PLAY
 | Guides | 13 · PPC pages: 3 |
 | Indexable URLs | **129** in 6 sitemaps, max click depth 2 |
 | Audit | `npm run audit:seo`: **0 errors, 0 warnings**. Max sibling similarity: states 0.24, services 0.25, cities 0.20 (31 cities) |
-| Temporary phone | `(713) 555-0147` (fictional range; kept out of schema) |
+| Phone | LeadSmart number `(888) 856-2240` (`+18888562240`), set in `src/content/site.ts`; included in schema |
 
 ## Architecture
 
@@ -79,7 +79,8 @@ node scripts/fetch-photos.mjs
 ## Before launch
 
 - [ ] Trademark and entity check for "Ridgewise Roofing" (USPTO Class 37). Register the domain.
-- [ ] Replace the temporary phone with the LeadSmart number, and set the lead webhook.
+- [x] LeadSmart phone number added (2026-10-09).
+- [ ] Set the lead webhook (`LEAD_WEBHOOK_URL`).
 - [ ] **Have the state licensing notes verified** (`rules` in `src/content/states/*.ts`). They were written conservatively and name the agency to check, but each should be confirmed with that state's board before launch.
 - [ ] Legal review of Privacy and Terms (the governing-law clause was removed pending your business's state of organization). Confirm SMS consent wording against TCPA.
 - [ ] Replace stock photos with real job photos as they come in.

@@ -2,8 +2,9 @@
 
 const env = (k: string) => (process.env[k] ?? "").trim();
 
-const TEMP_PHONE = "(713) 555-0147"; // fictional 555-01xx range; never emitted in schema
-const TEMP_PHONE_E164 = "+17135550147";
+// LeadSmart call-routing number (set 2026-10-09). An env value overrides it.
+const LEADSMART_PHONE = "(888) 856-2240";
+const LEADSMART_PHONE_E164 = "+18888562240";
 
 export const site = {
   name: "Ridgewise Roofing",
@@ -13,9 +14,9 @@ export const site = {
   market: "United States",
   marketLong: "all 50 states and Washington, D.C.",
   stateAbbr: "US",
-  phone: env("NEXT_PUBLIC_BUSINESS_PHONE") || TEMP_PHONE,
-  phoneE164: env("NEXT_PUBLIC_BUSINESS_PHONE_E164") || TEMP_PHONE_E164,
-  phoneIsReal: Boolean(env("NEXT_PUBLIC_BUSINESS_PHONE")),
+  phone: env("NEXT_PUBLIC_BUSINESS_PHONE") || LEADSMART_PHONE,
+  phoneE164: env("NEXT_PUBLIC_BUSINESS_PHONE_E164") || LEADSMART_PHONE_E164,
+  phoneIsReal: true,
   ppcPhone: env("NEXT_PUBLIC_PPC_TRACKING_PHONE") || null,
   email: env("NEXT_PUBLIC_BUSINESS_EMAIL") || null,
   hours: env("NEXT_PUBLIC_BUSINESS_HOURS") || null,
