@@ -29,3 +29,18 @@ All photos are from Pexels under the Pexels License (free for commercial use, no
 | galveston-pleasure-pier.webp | 37906632 | https://www.pexels.com/photo/37906632/  |
 | before-worn-roof.webp | 6931459 | https://www.pexels.com/photo/6931459/  |
 | after-new-shingle-roof.webp | 37677394 | https://www.pexels.com/photo/37677394/ (crop) |
+| before-storm-damaged-house.webp | 38476854 | https://www.pexels.com/photo/38476854/ |
+| after-clean-roofline.webp | 28460169 | https://www.pexels.com/photo/28460169/ |
+| before-sagging-barn-roof.webp | 5668698 | https://www.pexels.com/photo/5668698/ |
+| before-moss-roof.webp | 30506014 | https://www.pexels.com/photo/30506014/ |
+| after-new-shingles-closeup.webp | 33404080 | https://www.pexels.com/photo/33404080/ (crop) |
+| after-metal-roof.webp | 18513462 | https://www.pexels.com/photo/18513462/ (crop) |
+
+## Videos (Pexels License)
+
+| File | Pexels video ID | Source |
+|---|---|---|
+| videos/roofer-working-on-roof.mp4 | 13361432 | https://www.pexels.com/video/13361432/ |
+| videos/drone-over-house-roof.mp4 | 4198817 | https://www.pexels.com/video/4198817/ |
+| videos/drone-roof-flyover.mp4 | 4198811 | https://www.pexels.com/video/4198811/ |
+| videos/rain-on-roof.mp4 | 4169229 | https://www.pexels.com/video/4169229/ |

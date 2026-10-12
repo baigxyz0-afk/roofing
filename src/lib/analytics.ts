@@ -11,7 +11,9 @@ export type EventName =
   | "form_submit"
   | "schedule_request"
   | "quote_request"
-  | "cta_click";
+  | "cta_click"
+  | "roof_check_start"
+  | "roof_check_complete";
 
 declare global {
   interface Window {

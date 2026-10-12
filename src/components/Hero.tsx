@@ -19,12 +19,20 @@ type Props = {
   aside?: ReactNode;
   emergency?: boolean;
   photo?: Photo;
+  /** Full-bleed background photo behind the hero (darkened for contrast). */
+  background?: Photo;
 };
 
-export function Hero({ eyebrow, title, lead, crumbs, facts = [], service, aside, emergency, photo }: Props) {
+export function Hero({ eyebrow, title, lead, crumbs, facts = [], service, aside, emergency, photo, background }: Props) {
   return (
-    <section className="bg-ink text-white">
-      <div className="container-x grid gap-10 py-12 lg:grid-cols-[minmax(0,1.35fr)_minmax(0,1fr)] lg:items-center lg:py-16">
+    <section className="relative isolate overflow-hidden bg-ink text-white">
+      {background && (
+        <>
+          <Image src={background.src} alt="" fill priority sizes="100vw" className="-z-20 object-cover" />
+          <div className="absolute inset-0 -z-10 bg-gradient-to-r from-ink via-ink/85 to-ink/40" aria-hidden="true" />
+        </>
+      )}
+      <div className="container-x grid gap-10 py-12 lg:grid-cols-[minmax(0,1.35fr)_minmax(0,1fr)] lg:items-center lg:py-16" style={background ? { minHeight: "34rem" } : undefined}>
         <div className="min-w-0">
           {crumbs && <Breadcrumbs items={crumbs} light />}
           <p className={`eyebrow mt-4 ${emergency ? "!text-[#ffb4a8]" : "!text-[#9fd6db]"}`}>{eyebrow}</p>

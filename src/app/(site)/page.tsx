@@ -20,6 +20,8 @@ import { CtaBand } from "@/components/CtaBand";
 import { PhoneLink } from "@/components/PhoneLink";
 import { BeforeAfterSlider } from "@/components/BeforeAfterSlider";
 import { beforeAfter } from "@/content/beforeAfter";
+import { RoofCheck } from "@/components/RoofCheck";
+import { LoopVideo } from "@/components/LoopVideo";
 
 const title = "Roof Repair & Replacement Help in All 50 States";
 const description =
@@ -44,7 +46,15 @@ export default function Home() {
           </p>
         }
         facts={[availability, `${nat.zips.toLocaleString("en-US")} ZIP codes in our network`, "Free to request"]}
-        photo={photos.reroof}
+        background={photos.aerial}
+        aside={
+          <a href="#roof-check" className="block rounded-2xl bg-white/10 p-6 ring-1 ring-white/20 backdrop-blur transition hover:bg-white/15">
+            <p className="text-sm font-semibold tracking-wider text-[#9fd6db] uppercase">Free · 60 seconds</p>
+            <p className="mt-2 font-serif text-2xl font-semibold">How healthy is your roof?</p>
+            <p className="mt-2 text-white/85">Answer four quick questions and get a roof score, what to do next, and the right service.</p>
+            <span className="btn btn-primary mt-5">Start the Roof Check</span>
+          </a>
+        }
       />
 
       <section className="border-b border-line bg-white">
@@ -59,6 +69,15 @@ export default function Home() {
               {t}
             </p>
           ))}
+        </div>
+      </section>
+
+      <section id="roof-check" className="scroll-mt-24 bg-sand-deep py-14">
+        <div className="container-x grid gap-10 lg:grid-cols-[minmax(0,1fr)_minmax(0,1.2fr)] lg:items-center">
+          <div>
+            <SectionHeading eyebrow="Roof Check" title="Find out where your roof stands in a minute" lead="Roof age, recent storms and what you can see from the ground tell a lot. You'll get a plain-language score, the service that fits, and the guide to read first." />
+          </div>
+          <RoofCheck phone={site.phone} e164={site.phoneE164} />
         </div>
       </section>
 
@@ -163,9 +182,31 @@ export default function Home() {
       <section className="bg-white py-16">
         <div className="container-x">
           <SectionHeading eyebrow="Before and after" title="What a replacement can look like" lead="Drag the slider to compare. These are stock examples, not jobs by contractors in our network." />
-          <div className="grid gap-6 md:grid-cols-2">
+          <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
             {beforeAfter.map((b) => (
               <BeforeAfterSlider key={b.slug} item={b} />
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-ink py-16 text-white">
+        <div className="container-x">
+          <SectionHeading light eyebrow="See it up close" title="What roofers look at, and why it matters" lead="Short clips of real roof work and weather. Stock footage, not jobs by contractors in our network." />
+          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+            {[
+              { src: "/videos/drone-over-house-roof.mp4", poster: "/videos/drone-over-house-roof-poster.webp", t: "Drone inspections", b: "Many roofers photograph every slope by drone, so you see the damage without anyone walking a fragile roof." },
+              { src: "/videos/roofer-working-on-roof.mp4", poster: "/videos/roofer-working-on-roof-poster.webp", t: "On the roof", b: "Repairs and re-roofs happen slope by slope: tear-off, decking check, underlayment, then shingles." },
+              { src: "/videos/rain-on-roof.mp4", poster: "/videos/rain-on-roof-poster.webp", t: "Where water goes", b: "Valleys, edges and gutters carry the most water, which is why most leaks start there, not in the middle of a slope." },
+              { src: "/videos/drone-roof-flyover.mp4", poster: "/videos/drone-roof-flyover-poster.webp", t: "The whole picture", b: "A flyover shows ridge lines, vents and neighboring roofs: useful when a whole street was hit by the same storm." },
+            ].map((v) => (
+              <figure key={v.src}>
+                <LoopVideo src={v.src} poster={v.poster} label={v.t} />
+                <figcaption className="mt-3">
+                  <span className="block font-semibold">{v.t}</span>
+                  <span className="mt-1 block text-sm text-white/75">{v.b}</span>
+                </figcaption>
+              </figure>
             ))}
           </div>
         </div>
