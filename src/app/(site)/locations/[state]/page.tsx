@@ -16,6 +16,7 @@ import { Icon } from "@/components/icons";
 import { ZipChecker } from "@/components/ZipChecker";
 import { CtaBand } from "@/components/CtaBand";
 import type { Article, Service } from "@/content/types";
+import { generatedInState, displayName } from "@/content/generatedCities";
 
 export const dynamicParams = false;
 export function generateStaticParams() {
@@ -48,7 +49,14 @@ export default async function StatePage({ params }: P) {
     { name: st.name, path },
   ];
   const localPages = indexableCities().filter((c) => c.stateSlug === st.slug);
-  const pageFor = (name: string) => localPages.find((c) => c.name.toLowerCase() === name.toLowerCase() || c.name.toLowerCase().startsWith(name.toLowerCase() + " "));
+  const generated = generatedInState(st.slug);
+  const pageFor = (name: string) => {
+    const n = displayName(name).toLowerCase();
+    const hand = localPages.find((c) => c.name.toLowerCase() === n || c.name.toLowerCase().startsWith(n + " "));
+    if (hand) return hand;
+    const g = generated.find((c) => c.name.toLowerCase() === n);
+    return g ? { slug: g.slug, name: g.name } : undefined;
+  };
   const services = [...new Set(st.risks.flatMap((r) => RISKS[r].services))].map(getService).filter(Boolean).slice(0, 6) as Service[];
   const guides = [...new Set(st.risks.flatMap((r) => RISKS[r].guides))].map(getArticle).filter((a) => a?.status === "PUBLISHED").slice(0, 4) as Article[];
   const neighbors = indexableStates().filter((s) => st.neighbors.includes(s.slug));
@@ -127,9 +135,9 @@ export default async function StatePage({ params }: P) {
                   <li key={c.city} className="flex items-center justify-between gap-3 rounded-lg bg-white px-4 py-3 ring-1 ring-line">
                     <span className="min-w-0">
                       {page ? (
-                        <Link href={routes.city(st.slug, page.slug)} className="link font-semibold">{c.city}</Link>
+                        <Link href={routes.city(st.slug, page.slug)} className="link font-semibold">{displayName(c.city)}</Link>
                       ) : (
-                        <span className="font-semibold">{c.city}</span>
+                        <span className="font-semibold">{displayName(c.city)}</span>
                       )}
                       {c.county && <span className="block text-sm text-muted">{c.county} County</span>}
                     </span>
@@ -176,6 +184,26 @@ export default async function StatePage({ params }: P) {
           </div>
         </div>
       </section>
+
+      {generated.length > 0 && (
+        <section className="py-14">
+          <div className="container-x">
+            <h2 className="text-3xl font-semibold">Roofing help by city in {st.name}</h2>
+            <p className="mt-2 text-muted">
+              {generated.length + localPages.length} {st.name} communities with their own page: covered ZIP codes, nearby covered areas and the local rules that apply.
+            </p>
+            <ul className="mt-6 grid grid-cols-2 gap-x-6 gap-y-2 text-sm sm:grid-cols-3 lg:grid-cols-5">
+              {[...localPages.map((c) => ({ slug: c.slug, name: c.name })), ...generated.map((c) => ({ slug: c.slug, name: c.name }))]
+                .sort((a, b) => a.name.localeCompare(b.name))
+                .map((c) => (
+                  <li key={c.slug}>
+                    <Link href={routes.city(st.slug, c.slug)} className="link">{c.name}</Link>
+                  </li>
+                ))}
+            </ul>
+          </div>
+        </section>
+      )}
 
       <section className="bg-white py-14">
         <div className="container-x max-w-4xl">

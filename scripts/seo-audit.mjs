@@ -40,6 +40,7 @@ const descs = new Map();
 const h1s = new Map();
 const links = new Map();
 const bodies = new Map();
+const thin = new Set();
 for (const path of urls) {
   const { res, text: html } = await get(path);
   if (res.status !== 200) {
@@ -74,7 +75,10 @@ for (const path of urls) {
     .split(/\s+/)
     .filter(Boolean);
   bodies.set(path, words);
-  if (words.length < 250 && groupOf.get(path) !== "pages") warn(path, `thin main content (${words.length} words)`);
+  if (words.length < 250 && groupOf.get(path) !== "pages") {
+    warn(path, `thin main content (${words.length} words)`);
+    thin.add(path);
+  }
   for (const [m, v] of [[titles, title], [descs, desc], [h1s, h1[0]?.[1]]]) {
     if (!v) continue;
     m.set(v, [...(m.get(v) || []), path]);
@@ -132,9 +136,11 @@ for (const [p, w] of bodies) {
   shingles.set(p, set);
 }
 const diff = [];
-for (const g of new Set(groupOf.values())) {
+// City pages are compared with the other cities in the same state, where templated duplication would show.
+const bucketOf = (u) => (groupOf.get(u) === "cities" ? `cities:${u.split("/")[2]}` : groupOf.get(u));
+for (const g of new Set(urls.map(bucketOf))) {
   if (g === "pages") continue;
-  const peers = urls.filter((u) => groupOf.get(u) === g && shingles.has(u));
+  const peers = urls.filter((u) => bucketOf(u) === g && shingles.has(u));
   for (let i = 0; i < peers.length; i++) {
     const a = shingles.get(peers[i]);
     let maxJ = 0;
@@ -161,9 +167,10 @@ for (const g of new Set(groupOf.values())) {
 }
 
 // 2c. Internal links must resolve with 200 directly (no redirects, no 404s).
+const urlSet = new Set(urls);
 const allTargets = new Set([...links.values()].flatMap((s) => [...s]));
 for (const t of allTargets) {
-  if (urls.includes(t) || t.startsWith("/og/") || t.startsWith("/api/") || t.startsWith("/_next/")) continue;
+  if (urlSet.has(t) || t.startsWith("/og/") || t.startsWith("/api/") || t.startsWith("/_next/")) continue;
   const { res } = await get(t);
   if (res.status !== 200) err(t, `internal link returns ${res.status}`);
 }
@@ -173,7 +180,7 @@ const depth = new Map([["/", 0]]);
 const queue = ["/"];
 while (queue.length) {
   const p = queue.shift();
-  for (const l of links.get(p) || []) if (!depth.has(l) && urls.includes(l)) {
+  for (const l of links.get(p) || []) if (!depth.has(l) && urlSet.has(l)) {
     depth.set(l, depth.get(p) + 1);
     queue.push(l);
   }
@@ -218,10 +225,21 @@ if ((await fetch(BASE + "/api/coverage/?zip=abc")).status !== 400) err("/api/cov
 const cross = await fetch(BASE + "/api/lead", { method: "POST", headers: { "content-type": "application/json", origin: "https://evil.example" }, body: "{}" });
 if (cross.status !== 403) err("/api/lead", `cross-origin not rejected (${cross.status})`);
 
+// DUP_OUT=path: write the city pages that fail the similarity check, so the build can keep them out of the index.
+if (process.env.DUP_OUT) {
+  const fs = await import("node:fs");
+  const prev = fs.existsSync(process.env.DUP_OUT) ? JSON.parse(fs.readFileSync(process.env.DUP_OUT, "utf8")) : [];
+  const flagged = diff.filter((d) => d.group.startsWith("cities:") && (d.maxJ >= 0.35 || d.unique < 0.3 || thin.has(d.path))).map((d) => d.path);
+  const all = [...new Set([...prev, ...flagged])].sort();
+  fs.writeFileSync(process.env.DUP_OUT, JSON.stringify(all, null, 1));
+  console.log(`Flagged ${flagged.length} city pages this run (${all.length} total) -> ${process.env.DUP_OUT}`);
+}
+
 const byGroup = [...new Set(groupOf.values())].map((g) => `${g} ${urls.filter((u) => groupOf.get(u) === g).length}`).join(" · ");
 console.log(`Audited ${urls.length} sitemap URLs (${byGroup}) · max click depth ${maxDepth}`);
-for (const g of [...new Set(diff.map((d) => d.group))]) {
-  const rows = diff.filter((d) => d.group === g);
+const summaryGroup = (g) => (g.startsWith("cities:") ? "cities (vs. same state)" : g);
+for (const g of [...new Set(diff.map((d) => summaryGroup(d.group)))]) {
+  const rows = diff.filter((d) => summaryGroup(d.group) === g);
   const worst = rows.reduce((a, b) => (b.maxJ > a.maxJ ? b : a));
   const minUnique = rows.reduce((a, b) => (b.unique < a.unique ? b : a));
   console.log(`  ${g}: max sibling similarity ${worst.maxJ.toFixed(2)} (${worst.path}) · lowest unique share ${(minUnique.unique * 100).toFixed(0)}% (${minUnique.path})`);

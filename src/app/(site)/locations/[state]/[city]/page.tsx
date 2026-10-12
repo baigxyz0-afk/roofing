@@ -15,16 +15,35 @@ import { Icon } from "@/components/icons";
 import { LeadFormBlock } from "@/components/lead/LeadFormBlock";
 import { CtaBand } from "@/components/CtaBand";
 import type { Service } from "@/content/types";
+import { generatedCities, getGeneratedCity, generatedIndexable } from "@/content/generatedCities";
+import { GeneratedCityPage } from "@/components/templates/GeneratedCityPage";
+import { indexableStates } from "@/lib/sitemap";
 
 export const dynamicParams = false;
 export function generateStaticParams() {
-  return indexableCities().map((c) => ({ state: c.stateSlug, city: c.slug }));
+  const states = new Set(indexableStates().map((s) => s.slug));
+  return [
+    ...indexableCities().map((c) => ({ state: c.stateSlug, city: c.slug })),
+    // Data-driven city pages (Wave 5). Ones without enough unique data are rendered noindex and kept out of sitemaps.
+    ...generatedCities.filter((c) => states.has(c.stateSlug)).map((c) => ({ state: c.stateSlug, city: c.slug })),
+  ];
 }
 
 type P = { params: Promise<{ state: string; city: string }> };
 
 export async function generateMetadata({ params }: P) {
   const p = await params;
+  const g = getCity(p.state, p.city) ? null : getGeneratedCity(p.state, p.city);
+  if (g) {
+    const st = getState(p.state)!;
+    return pageMeta({
+      title: `Roof Repair & Replacement in ${g.name}, ${st.abbr}`,
+      description: `Roofing help in ${g.name}, ${st.abbr} (${g.county} County): ${g.zips.length} covered ZIP${g.zips.length === 1 ? "" : "s"}, nearby covered areas and local roofers for repairs and storm damage.`.slice(0, 158),
+      path: routes.city(st.slug, g.slug),
+      ogKey: `locations--${st.slug}`,
+      noindex: !generatedIndexable(g),
+    });
+  }
   const c = getCity(p.state, p.city)!;
   return pageMeta({
     title: `Roof Repair & Replacement in ${cityLabel(c)}`,
@@ -35,8 +54,10 @@ export async function generateMetadata({ params }: P) {
 
 export default async function CityPage({ params }: P) {
   const p = await params;
-  const c = getCity(p.state, p.city);
   const st = getState(p.state);
+  const g = getCity(p.state, p.city) ? null : getGeneratedCity(p.state, p.city);
+  if (g && st) return <GeneratedCityPage c={g} st={st} />;
+  const c = getCity(p.state, p.city);
   if (!c || !st) notFound();
   const path = routes.city(st.slug, c.slug);
   const link = createLinker(path);

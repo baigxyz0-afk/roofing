@@ -9,7 +9,9 @@ export type OgCard = { key: string; eyebrow: string; title: string };
 
 // Per-page Open Graph card definitions for every indexable URL.
 export function ogCards(): OgCard[] {
-  return indexableUrls().map((u) => {
+  return indexableUrls()
+    .filter((u) => u.ownOg !== false)
+    .map((u) => {
     const parts = u.path.split("/").filter(Boolean);
     let eyebrow = "Roofing help nationwide";
     let title = u.title;

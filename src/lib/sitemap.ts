@@ -5,10 +5,11 @@ import { cities, cityServices, states, cityBySlug } from "@/content/locations";
 import { publishedArticles } from "@/content/articles";
 import { stateCoverage } from "@/content/coverage";
 import { dates } from "@/content/misc";
+import { generatedCities, generatedIndexable } from "@/content/generatedCities";
 import { cityQuality, cityServiceQuality, stateQuality } from "./quality";
 
 export type SitemapGroup = "pages" | "services" | "states" | "cities" | "local-services" | "guides";
-export type IndexUrl = { path: string; lastmod: string; group: SitemapGroup; title: string };
+export type IndexUrl = { path: string; lastmod: string; group: SitemapGroup; title: string; ownOg?: false };
 
 export function indexableStates() {
   return states.filter((s) => stateQuality(s, stateCoverage(s.abbr)?.zips ?? 0).ok);
@@ -16,6 +17,11 @@ export function indexableStates() {
 export function indexableCities() {
   const ok = new Set(indexableStates().map((s) => s.slug));
   return cities.filter((c) => ok.has(c.stateSlug) && cityQuality(c).ok);
+}
+/** Data-driven city pages that carry enough unique data to be indexed. */
+export function indexableGeneratedCities() {
+  const ok = new Set(indexableStates().map((s) => s.slug));
+  return generatedCities.filter((c) => ok.has(c.stateSlug) && generatedIndexable(c));
 }
 export function indexableCityServices() {
   return cityServices.filter((cs) => cityServiceQuality(cs).ok && indexableCities().some((c) => c.slug === cs.citySlug));
@@ -35,6 +41,7 @@ export function indexableUrls(): IndexUrl[] {
     { path: routes.locations(), lastmod: dates.locations, group: "states", title: "Roofing across the United States" },
     ...indexableStates().map((s) => ({ path: routes.state(s.slug), lastmod: s.updated, group: "states" as const, title: `Roofing in ${s.name}` })),
     ...indexableCities().map((c) => ({ path: routes.city(c.stateSlug, c.slug), lastmod: c.updated, group: "cities" as const, title: c.name })),
+    ...indexableGeneratedCities().map((c) => ({ path: routes.city(c.stateSlug, c.slug), lastmod: "2026-10-12", group: "cities" as const, title: `${c.name}, ${c.state}`, ownOg: false as const })),
     ...indexableCityServices().map((cs) => {
       const c = cityBySlug(cs.citySlug)!;
       return { path: routes.cityService(c.stateSlug, c.slug, cs.serviceSlug), lastmod: cs.updated, group: "local-services" as const, title: cs.h1 };
