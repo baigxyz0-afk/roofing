@@ -13,7 +13,10 @@ for i in $(seq 1 "$ROUNDS"); do
   SERVER=$!
   for _ in $(seq 1 60); do curl -s -o /dev/null "http://localhost:$PORT/" && break; sleep 1; done
   BEFORE=$(node -e 'console.log(require("./src/data/cities-noindex.json").length)')
-  BASE="http://localhost:$PORT" DUP_OUT=src/data/cities-noindex.json node scripts/seo-audit.mjs | grep -E "^Flagged|^Audited|cities \(vs" || true
+  # The audit exits 1 when it finds errors (expected while flagging); only a crash without a "Flagged" line is fatal.
+  BASE="http://localhost:$PORT" DUP_OUT=src/data/cities-noindex.json node scripts/seo-audit.mjs > .data-dedupe-audit.txt 2>&1 || true
+  if ! grep -q "^Flagged" .data-dedupe-audit.txt; then echo "audit crashed:"; tail -8 .data-dedupe-audit.txt; taskkill //F //T //PID "$SERVER" > /dev/null 2>&1 || true; exit 1; fi
+  grep -E "^Flagged|^Audited|cities \(vs|service\+city" .data-dedupe-audit.txt || true
   kill "$SERVER" 2>/dev/null || true
   taskkill //F //T //PID "$SERVER" > /dev/null 2>&1 || true
   AFTER=$(node -e 'console.log(require("./src/data/cities-noindex.json").length)')

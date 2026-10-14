@@ -6,6 +6,7 @@ import { publishedArticles } from "@/content/articles";
 import { stateCoverage } from "@/content/coverage";
 import { dates } from "@/content/misc";
 import { generatedCities, generatedIndexable } from "@/content/generatedCities";
+import { allCombos, comboIndexable } from "@/content/generatedCombos";
 import { cityQuality, cityServiceQuality, stateQuality } from "./quality";
 
 export type SitemapGroup = "pages" | "services" | "states" | "cities" | "local-services" | "guides";
@@ -46,6 +47,9 @@ export function indexableUrls(): IndexUrl[] {
       const c = cityBySlug(cs.citySlug)!;
       return { path: routes.cityService(c.stateSlug, c.slug, cs.serviceSlug), lastmod: cs.updated, group: "local-services" as const, title: cs.h1 };
     }),
+    ...allCombos(indexableStates())
+      .filter((x) => comboIndexable(x.c, x.service))
+      .map((x) => ({ path: routes.cityService(x.st.slug, x.c.slug, x.service), lastmod: "2026-10-14", group: "local-services" as const, title: `${x.service} in ${x.c.name}, ${x.c.state}`, ownOg: false as const })),
     { path: routes.resources(), lastmod: dates.guides, group: "guides", title: "Resources" },
     ...publishedArticles.map((a) => ({ path: routes.guide(a.slug), lastmod: a.updated, group: "guides" as const, title: a.title })),
   ];

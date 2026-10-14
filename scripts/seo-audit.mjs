@@ -9,8 +9,16 @@ const warn = (u, m) => warns.push(`${u}: ${m}`);
 const BANNED = [/in today's fast-paced world/i, /look no further/i, /your trusted partner/i, /we understand that/i, /comprehensive solutions/i, /world-class/i, /one-stop shop/i, /hassle-free/i, /state-of-the-art/i, /peace of mind/i, /lorem ipsum/i, /\{\{[A-Z_]+\}\}/];
 
 async function get(path, opts = {}) {
-  const res = await fetch(BASE + path, { redirect: "manual", ...opts });
-  return { res, text: res.status < 300 ? await res.text() : "" };
+  // Retry transient connection errors (large crawls can reset sockets on a local dev box).
+  for (let attempt = 1; ; attempt++) {
+    try {
+      const res = await fetch(BASE + path, { redirect: "manual", ...opts });
+      return { res, text: res.status < 300 ? await res.text() : "" };
+    } catch (e) {
+      if (attempt >= 4) throw e;
+      await new Promise((r) => setTimeout(r, 500 * attempt));
+    }
+  }
 }
 const toPath = (loc) => new URL(loc).pathname;
 const attr = (html, re) => (html.match(re) || [])[1];
@@ -137,7 +145,8 @@ for (const [p, w] of bodies) {
 }
 const diff = [];
 // City pages are compared with the other cities in the same state, where templated duplication would show.
-const bucketOf = (u) => (groupOf.get(u) === "cities" ? `cities:${u.split("/")[2]}` : groupOf.get(u));
+// Service + city pages are compared with the same service in the same state.
+const bucketOf = (u) => (groupOf.get(u) === "cities" ? `cities:${u.split("/")[2]}` : groupOf.get(u) === "local-services" ? `local:${u.split("/")[4]}:${u.split("/")[2]}` : groupOf.get(u));
 for (const g of new Set(urls.map(bucketOf))) {
   if (g === "pages") continue;
   const peers = urls.filter((u) => bucketOf(u) === g && shingles.has(u));
@@ -229,7 +238,7 @@ if (cross.status !== 403) err("/api/lead", `cross-origin not rejected (${cross.s
 if (process.env.DUP_OUT) {
   const fs = await import("node:fs");
   const prev = fs.existsSync(process.env.DUP_OUT) ? JSON.parse(fs.readFileSync(process.env.DUP_OUT, "utf8")) : [];
-  const flagged = diff.filter((d) => d.group.startsWith("cities:") && (d.maxJ >= 0.35 || d.unique < 0.3 || thin.has(d.path))).map((d) => d.path);
+  const flagged = diff.filter((d) => (d.group.startsWith("cities:") || d.group.startsWith("local:")) && (d.maxJ >= 0.35 || d.unique < 0.3 || thin.has(d.path))).map((d) => d.path);
   const all = [...new Set([...prev, ...flagged])].sort();
   fs.writeFileSync(process.env.DUP_OUT, JSON.stringify(all, null, 1));
   console.log(`Flagged ${flagged.length} city pages this run (${all.length} total) -> ${process.env.DUP_OUT}`);
@@ -237,7 +246,7 @@ if (process.env.DUP_OUT) {
 
 const byGroup = [...new Set(groupOf.values())].map((g) => `${g} ${urls.filter((u) => groupOf.get(u) === g).length}`).join(" · ");
 console.log(`Audited ${urls.length} sitemap URLs (${byGroup}) · max click depth ${maxDepth}`);
-const summaryGroup = (g) => (g.startsWith("cities:") ? "cities (vs. same state)" : g);
+const summaryGroup = (g) => (g.startsWith("cities:") ? "cities (vs. same state)" : g.startsWith("local:") ? "service+city (vs. same service & state)" : g);
 for (const g of [...new Set(diff.map((d) => summaryGroup(d.group)))]) {
   const rows = diff.filter((d) => summaryGroup(d.group) === g);
   const worst = rows.reduce((a, b) => (b.maxJ > a.maxJ ? b : a));

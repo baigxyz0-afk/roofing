@@ -10,6 +10,7 @@ import { graph, ids, pageGraph } from "@/lib/schema";
 import { Hero } from "@/components/Hero";
 import { Chip, FaqList, JsonLd } from "@/components/ui";
 import { PhoneLink } from "@/components/PhoneLink";
+import { combosForCity } from "@/content/generatedCombos";
 
 // Data-driven city page (Wave 5). Kept deliberately lean on shared boilerplate: most of the main content is
 // real per-city data (covered ZIPs, real distances, county rules), so sibling pages don't read as near-duplicates.
@@ -102,6 +103,20 @@ export function GeneratedCityPage({ c, st }: { c: GeneratedCity; st: State }) {
                 <strong>Hiring in {st.name}:</strong> {st.rules.split(". ")[0]}.{" "}
                 <Link href={routes.state(st.slug)} className="link">More on {st.name} roofing rules</Link>
               </p>
+            </div>
+
+            <div>
+              <h2 className="text-2xl font-semibold">Roofing services in {c.name}</h2>
+              <ul className="mt-4 grid gap-2 sm:grid-cols-3">
+                {combosForCity(c, st).map((slug) => {
+                  const sv = getService(slug)!;
+                  return (
+                    <li key={slug}>
+                      <Link href={routes.cityService(st.slug, c.slug, slug)} className="card block p-4 font-semibold hover:text-teal-deep">{sv.shortName ?? sv.name} in {c.name}</Link>
+                    </li>
+                  );
+                })}
+              </ul>
             </div>
 
             <FaqList faqs={faqs} title={`${c.name} coverage`} />
