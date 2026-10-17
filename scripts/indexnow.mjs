@@ -11,7 +11,14 @@ if (!key) {
 }
 const SOURCE = (process.env.SITEMAP_BASE || SITE).replace(/\/$/, "");
 const toSite = (u) => SITE + new URL(u).pathname;
-let urls = process.argv.slice(2).map((p) => SITE + p);
+const args = process.argv.slice(2);
+// Git Bash rewrites "/path/" arguments into Windows paths (e.g. C:/Program Files/Git/path/). Refuse those.
+const bad = args.filter((p) => !p.startsWith("/") || /^[A-Za-z]:/.test(p));
+if (bad.length) {
+  console.error(`Not site paths: ${bad.join(", ")}. On Git Bash run with MSYS_NO_PATHCONV=1.`);
+  process.exit(1);
+}
+let urls = args.map((p) => SITE + p);
 if (!urls.length) {
   const index = await fetch(`${SOURCE}/sitemap.xml`).then((r) => r.text());
   for (const sm of index.matchAll(/<loc>([^<]+)<\/loc>/g)) {
