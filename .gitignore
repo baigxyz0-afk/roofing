@@ -7,3 +7,8 @@ node_modules
 next-env.d.ts
 .claude/
 .data-dedupe-audit.txt
+
+# OpenNext / Cloudflare
+.open-next
+.wrangler
+.dev.vars*
