@@ -3,7 +3,11 @@ import staticAssetsIncrementalCache from "@opennextjs/cloudflare/overrides/incre
 
 // Every page is prerendered and nothing revalidates, so serve the build-time
 // HTML straight from Workers static assets instead of re-rendering per request.
-export default defineCloudflareConfig({
+const config = defineCloudflareConfig({
   incrementalCache: staticAssetsIncrementalCache,
   enableCacheInterception: true,
 });
+
+config.buildCommand = "npm run build:next";
+
+export default config;

@@ -23,9 +23,9 @@ import { beforeAfter } from "@/content/beforeAfter";
 import { RoofCheck } from "@/components/RoofCheck";
 import { LoopVideo } from "@/components/LoopVideo";
 
-const title = "Roof Repair & Replacement Help in All 50 States";
+const title = "Roof Repair & Replacement Near You | Ridgewise Roofing";
 const description =
-  "Get connected with a local roofer for leaks, hail, hurricane and ice-dam damage, insurance inspections and roof replacement, in all 50 states and D.C.";
+  "Need local roofers? Connect with licensed, insured contractors for emergency leak repairs, hail & storm damage or roof replacement. Free estimates nationwide!";
 
 export const metadata = pageMeta({ title, description, path: "/" });
 

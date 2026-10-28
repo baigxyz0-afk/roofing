@@ -52,7 +52,7 @@ export function GeneratedCityPage({ c, st }: { c: GeneratedCity; st: State }) {
   return (
     <main id="main">
       <JsonLd data={graph(pageGraph({ path, name: `Roof Repair & Replacement in ${label}`, description: intro, crumbs, faqs, about: [placeId], extra: [place] }))} />
-      <Hero crumbs={crumbs} eyebrow={`${c.county} County · ${st.name}`} title={`Roofing help in ${label}`} lead={<p>{intro}</p>} facts={[availability, `${c.zips.length} covered ZIP${c.zips.length === 1 ? "" : "s"}`]} />
+      <Hero crumbs={crumbs} eyebrow={`${c.county} County · ${st.name}`} title={`Roofing help in ${label}`} lead={<p>{intro}</p>} facts={[availability, "Licensed & Insured Local Pros", "Free Estimates & Inspection", `${c.zips.length} covered ZIP${c.zips.length === 1 ? "" : "s"}`]} />
       <section className="py-14">
         <div className="container-x grid gap-10 lg:grid-cols-[minmax(0,1fr)_340px]">
           <div className="min-w-0 space-y-10">

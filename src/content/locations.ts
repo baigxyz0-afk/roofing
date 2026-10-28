@@ -474,9 +474,9 @@ export const cityServices: CityService[] = [
     serviceSlug: "hail-damage-roof-repair",
     status: "PUBLISHED",
     h1: "Hail damage roof repair in Katy",
-    seoTitle: "Hail Damage Roof Repair in Katy, TX",
+    seoTitle: "Hail Damage Roof Repair in Katy, TX | Free Inspection",
     metaDescription:
-      "Hail damage on Katy roofs: inspections after spring storms, insurance claims, HOA approval and upgrading to Class 4 shingles.",
+      "Hail damage on Katy roofs: inspections after spring storms, insurance claims, HOA approval and upgrading to Class 4 shingles. Connect with a licensed roofer.",
     answer:
       "Katy sits in the path of spring storms moving in from the west, and hail claims here are common. A roofer inspects test squares on each slope and the soft metals, documents the damage for your insurer, and quotes repair or replacement with HOA-approved shingles.",
     localAngle: [
@@ -493,9 +493,9 @@ export const cityServices: CityService[] = [
     serviceSlug: "wind-damage-roof-repair",
     status: "PUBLISHED",
     h1: "Hurricane and wind damage roof repair in Galveston",
-    seoTitle: "Hurricane Roof Repair in Galveston, TX",
+    seoTitle: "Hurricane Roof Repair in Galveston, TX | Fast 24/7 Help",
     metaDescription:
-      "Hurricane and wind damage roof repair on Galveston Island: tarping, windstorm certification for TWIA, historic districts and salt-air materials.",
+      "Hurricane & wind damage roof repair on Galveston Island: emergency dry-in, windstorm certification for TWIA & inspections from licensed local roofers.",
     answer:
       "On Galveston Island, wind damage repairs have to be built to windstorm code and inspected so the home stays eligible for TWIA coverage. After a storm, the priority is tarping openings, documenting damage, and then repairing with coastal-rated materials.",
     localAngle: [
@@ -512,9 +512,9 @@ export const cityServices: CityService[] = [
     serviceSlug: "storm-damage-roof-repair",
     status: "PUBLISHED",
     h1: "Storm and tree damage roof repair in Spring and The Woodlands",
-    seoTitle: "Storm & Tree Damage Roof Repair, Spring TX",
+    seoTitle: "Storm & Tree Damage Roof Repair, Spring TX | Fast Pros",
     metaDescription:
-      "Roof repair after storms and falling pines in Spring and The Woodlands: tarping, tree coordination, insurance documentation and community approval.",
+      "Emergency tree limb and storm roof repair in Spring, TX: emergency tarping, decking repair, insurance documentation & fast local roofing dispatch.",
     answer:
       "In Spring and The Woodlands, storm damage usually means trees. Tall pines snap or uproot in tropical storms and severe thunderstorms and land on roofs. A roofer coordinates with the tree service, tarps the opening, documents the damage and rebuilds decking, rafters and shingles.",
     localAngle: [

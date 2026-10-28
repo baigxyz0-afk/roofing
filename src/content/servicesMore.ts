@@ -10,9 +10,9 @@ export const servicesMore: Service[] = [
     shortName: "Ice dams",
     category: "repair",
     status: "PUBLISHED",
-    seoTitle: "Ice Dam Removal & Prevention for Your Roof",
+    seoTitle: "Emergency Ice Dam Removal & Roof Steaming Services",
     metaDescription:
-      "What causes ice dams, how they're safely removed with steam, the leaks they cause, and the insulation, ventilation and ice-barrier fixes that prevent them.",
+      "Safe steam ice dam removal for roofs and gutters. Prevent leaks, water backup & structural roof damage. Fast local dispatch with free estimates!",
     h1: "Ice dam removal and prevention",
     answer:
       "An ice dam forms when heat escaping into the attic melts snow higher on the roof and the water refreezes at the colder eaves. The ridge of ice backs water up under the shingles. Professionals remove dams with low-pressure steam, and prevention comes from air sealing, insulation, ventilation and an ice barrier membrane.",
@@ -64,9 +64,9 @@ export const servicesMore: Service[] = [
     shortName: "Shingle roofing",
     category: "replacement",
     status: "PUBLISHED",
-    seoTitle: "Asphalt Shingle Roofing: Types, Ratings & Warranties",
+    seoTitle: "Asphalt Shingle Roofing Installation & Replacement",
     metaDescription:
-      "Architectural vs. three-tab vs. designer shingles, wind and algae ratings, colors for hot and cold climates, and how shingle warranties really work.",
+      "Professional asphalt shingle roof installation & replacement. 3-tab, architectural & luxury shingles from certified local contractors. Free estimates!",
     h1: "Asphalt shingle roofing",
     answer:
       "Architectural (dimensional) asphalt shingles are the most common roof on American homes because they balance cost, appearance and wind performance. Choose by your climate: a high wind rating with enhanced nailing on the coasts and Plains, algae-resistant granules in humid regions, and a color that suits your attic and any HOA rules.",
@@ -109,9 +109,9 @@ export const servicesMore: Service[] = [
     shortName: "Class 4 shingles",
     category: "replacement",
     status: "PUBLISHED",
-    seoTitle: "Class 4 Impact-Resistant Shingles: Worth It?",
+    seoTitle: "Class 4 Impact-Resistant Shingles | Hail Proof Roofing",
     metaDescription:
-      "How the UL 2218 Class 4 rating works, which states see the most hail, insurance discounts for impact-resistant roofs, and when the upgrade pays off.",
+      "Upgrade to Class 4 impact-resistant shingles. Superior hail & storm protection plus homeowner insurance premium discounts. Connect with local roofers!",
     h1: "Class 4 impact-resistant shingles",
     answer:
       "Class 4 shingles passed the UL 2218 test, in which a 2-inch steel ball is dropped onto the shingle without cracking it. They resist hail better than standard shingles, and insurers in many hail-prone states offer premium discounts for them, which can offset part of the added cost.",
@@ -148,9 +148,9 @@ export const servicesMore: Service[] = [
     shortName: "Metal roofing",
     category: "replacement",
     status: "PUBLISHED",
-    seoTitle: "Metal Roofing: Standing Seam vs. Exposed Fastener",
+    seoTitle: "Metal Roofing Installation & Repair | Standing Seam",
     metaDescription:
-      "Standing seam and exposed-fastener metal roofs: lifespan, wind and snow performance, fire resistance, coastal corrosion and cost factors.",
+      "Expert metal roof installation, standing seam & corrugated panel repairs. Long-lasting, energy-efficient roofing from licensed local pros. Free quotes!",
     h1: "Metal roofing",
     answer:
       "A standing seam metal roof uses concealed clips and raised seams, resists high wind, sheds snow, reflects heat and can last 40 years or more. Exposed-fastener panels cost less but need screws re-checked over time. Near salt water, ask for aluminum or a coastal-rated finish and stainless fasteners.",
@@ -187,9 +187,9 @@ export const servicesMore: Service[] = [
     shortName: "Tile roofing",
     category: "replacement",
     status: "PUBLISHED",
-    seoTitle: "Tile Roof Repair & Underlayment Replacement",
+    seoTitle: "Tile Roof Repair & Tile Underlayment Replacement",
     metaDescription:
-      "Clay and concrete tile roofs: cracked tile repair, underlayment replacement, wind attachment, and what tile roofs in Florida, Arizona and California need.",
+      "Specialized tile roof repair, cracked tile replacement & tile underlayment restoration for clay and concrete roofs. Connect with local tile roofers!",
     h1: "Tile roof repair and replacement",
     answer:
       "Clay and concrete tiles often outlast the underlayment beneath them. Most tile roof leaks come from aged underlayment, cracked or slipped tiles, and flashing, so a common job is lifting the tiles, replacing the underlayment and battens, and relaying the same tiles with new ones where needed.",
@@ -225,9 +225,9 @@ export const servicesMore: Service[] = [
     shortName: "Flat roofs",
     category: "flat",
     status: "PUBLISHED",
-    seoTitle: "Flat Roof Repair & Replacement (TPO, EPDM, Mod Bit)",
+    seoTitle: "Flat Roof Repair & Replacement | TPO, EPDM & Mod Bit",
     metaDescription:
-      "Flat and low-slope roof repair and replacement: TPO, EPDM, modified bitumen, ponding water, porches, additions and rowhouse roofs.",
+      "Commercial & residential flat roof repair. TPO, EPDM rubber, modified bitumen & membrane coatings. Stop pooling water & flat roof leaks. Free estimate!",
     h1: "Flat and low-slope roof repair",
     answer:
       "Flat and low-slope roofs need membranes, not shingles: modified bitumen, EPDM rubber, TPO or similar systems. Most failures come from ponding water, open seams and flashing at walls. A roofer repairs seams and flashing, or replaces the membrane with better drainage.",
@@ -268,9 +268,9 @@ export const servicesMore: Service[] = [
     shortName: "Roof coatings",
     category: "flat",
     status: "PUBLISHED",
-    seoTitle: "Silicone & Reflective Roof Coatings Explained",
+    seoTitle: "Silicone & Reflective Roof Coating Restoration",
     metaDescription:
-      "Silicone and acrylic coatings for flat and metal roofs: when a coating extends roof life, when it doesn't, prep steps and climate considerations.",
+      "Extend your roof life with silicone and acrylic elastomeric roof coatings. Waterproof, UV-reflective coating systems applied by local experts. Free quotes!",
     h1: "Silicone and reflective roof coatings",
     answer:
       "A roof coating is a fluid-applied membrane, usually silicone or acrylic, rolled or sprayed over a sound flat or metal roof. It seals small cracks and fasteners and reflects sunlight. It doesn't fix a roof with wet insulation or failed decking; that has to be repaired first.",
@@ -306,9 +306,9 @@ export const servicesMore: Service[] = [
     shortName: "Roof inspection",
     category: "inspection",
     status: "PUBLISHED",
-    seoTitle: "Roof Inspection: What's Checked and When You Need One",
+    seoTitle: "Professional Roof Inspection Services | Free Report",
     metaDescription:
-      "Roof inspections for homeowners, buyers, sellers and insurers: storm checks, insurance condition reports, attic checks and photo documentation.",
+      "Comprehensive roof inspections for storm damage, real estate transactions & insurance claims. Detailed photo reports from licensed roofers. Free quote!",
     h1: "Roof inspection",
     answer:
       "A roof inspection checks every slope, the flashing, vents, gutters and the attic underside, then reports condition, damage and remaining life with photos. Homeowners order them after storms, before insurance renewals, before winter or hurricane season, and when buying or selling a house.",
@@ -344,9 +344,9 @@ export const servicesMore: Service[] = [
     shortName: "Roof maintenance",
     category: "inspection",
     status: "PUBLISHED",
-    seoTitle: "Roof Maintenance & Cleaning: A Seasonal Checklist",
+    seoTitle: "Roof Maintenance & Roof Cleaning Services Near You",
     metaDescription:
-      "Roof maintenance by season: debris and needle removal, algae and moss cleaning, sealant touch-ups, pipe boots, and pre-winter and pre-storm checks.",
+      "Prevent costly leaks with scheduled roof maintenance, debris clearing, flashing resealing & moss removal. Keep your roof warranty valid. Free estimates!",
     h1: "Roof maintenance and cleaning",
     answer:
       "Roof maintenance means clearing leaves and needles from valleys and gutters, replacing aging pipe boots, resealing exposed fasteners and flashing, and soft-washing algae or removing moss. A yearly visit before your region's hardest season catches small problems before storms or snow do.",
@@ -382,9 +382,9 @@ export const servicesMore: Service[] = [
     shortName: "Roof ventilation",
     category: "components",
     status: "PUBLISHED",
-    seoTitle: "Attic & Roof Ventilation: How It Works",
+    seoTitle: "Attic & Roof Ventilation Installation and Repair",
     metaDescription:
-      "Balanced attic ventilation explained: soffit intake, ridge vents, why mixing vent types backfires, and how ventilation affects heat, moisture and ice dams.",
+      "Lower cooling costs and prevent roof rot with balanced ridge vents, soffit vents & solar attic fans. Quality installation by local pros. Free estimates!",
     h1: "Attic and roof ventilation",
     answer:
       "Good attic ventilation pulls outside air in at the soffits and exhausts it at the ridge, which keeps the roof deck cooler in summer and drier and colder in winter. Poor ventilation bakes shingles in hot climates, feeds condensation and ice dams in cold ones, and can void parts of shingle warranties.",
@@ -420,9 +420,9 @@ export const servicesMore: Service[] = [
     shortName: "Flashing repair",
     category: "components",
     status: "PUBLISHED",
-    seoTitle: "Roof Flashing & Chimney Leak Repair",
+    seoTitle: "Roof Flashing & Chimney Leak Repair Contractors",
     metaDescription:
-      "Flashing repair at chimneys, walls, dormers, valleys and pipes: why flashing causes most roof leaks and how step flashing and counterflashing fix them.",
+      "Stop difficult chimney leaks, step flashing failures & valley water intrusion. Precision metal flashing repair and counter-flashing resealing. Free quote!",
     h1: "Flashing and chimney leak repair",
     answer:
       "Flashing is the metal or membrane that seals the joints where a roof meets a chimney, wall, dormer or pipe. When it rusts, pulls loose or was only caulked, water gets in. Proper repair replaces it with step flashing and counterflashing, not more sealant.",
@@ -458,9 +458,9 @@ export const servicesMore: Service[] = [
     shortName: "Skylights",
     category: "components",
     status: "PUBLISHED",
-    seoTitle: "Skylight Leak Repair & Replacement",
+    seoTitle: "Skylight Leak Repair & Replacement Services Near You",
     metaDescription:
-      "Skylight leaks: failed flashing kits, cracked domes, condensation versus leaks, and replacing skylights during a roof replacement.",
+      "Fix leaking skylights or install energy-efficient new skylights. Flashing kit replacement, dome resealing & expert installation by local roofers. Free quotes!",
     h1: "Skylight repair and replacement",
     answer:
       "Most skylight leaks come from the flashing around the unit rather than the glass. A roofer re-flashes the skylight with a manufacturer kit, or replaces an old or cracked unit, ideally during a roof replacement when the flashing is open anyway.",
@@ -496,9 +496,9 @@ export const servicesMore: Service[] = [
     shortName: "Fascia & soffit",
     category: "components",
     status: "PUBLISHED",
-    seoTitle: "Fascia, Soffit & Roof Decking Repair",
+    seoTitle: "Fascia, Soffit & Roof Decking Repair Contractors",
     metaDescription:
-      "Rotted fascia, damaged soffit and soft roof decking: causes, repairs, animal entry points and why drip edge protects the roof edge.",
+      "Repair rotten fascia boards, damaged soffit vents & sagging plywood roof decking. Protect your eaves and gutters from water damage. Free estimates!",
     h1: "Fascia, soffit and decking repair",
     answer:
       "Fascia boards and the roof edge rot when water gets behind gutters or there's no drip edge, and soffits are a common entry point for squirrels, rats, raccoons and birds. Repair replaces rotted wood, adds drip edge and closes openings with vented soffit so the attic still breathes.",

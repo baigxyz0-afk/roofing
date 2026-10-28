@@ -54,7 +54,7 @@ export function ServiceTemplate({ s, path, crumbs, city, local, faqs }: Props) {
         lead={<p>{local?.answer ?? s.answer}</p>}
         service={s.slug}
         emergency={false}
-        facts={[availability, city ? `Serving ${place}` : "All 50 states + D.C.", "Quote before work"]}
+        facts={[availability, "Licensed & Insured Local Pros", "Free Inspection & Quote", city ? `Serving ${place}` : "All 50 states + D.C."]}
         photo={servicePhotoOverrides[s.slug] ?? categoryPhotos[s.category]}
       />
 

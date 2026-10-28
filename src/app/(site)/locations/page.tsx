@@ -12,9 +12,9 @@ import { Chip, FaqList, JsonLd } from "@/components/ui";
 import { ZipChecker } from "@/components/ZipChecker";
 import { CtaBand } from "@/components/CtaBand";
 
-const title = "Roofing Across the U.S.: All 50 States + D.C.";
+const title = "Local Roofing Contractors by State | Ridgewise Roofing";
 const description =
-  "Find roofing help in all 50 states and Washington, D.C.: state guides to storms, climate, contractor licensing and permits, plus a ZIP checker for our network.";
+  "Find licensed, insured local roofing contractors in all 50 states and D.C. Expert leak repairs, storm damage restoration & roof replacements. Free quotes!";
 const path = routes.locations();
 
 export const metadata = pageMeta({ title, description, path });

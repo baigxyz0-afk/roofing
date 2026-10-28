@@ -51,15 +51,23 @@ export function GeneratedCityServicePage({ c, st, s, siblingsWithPage }: { c: Ge
     name: `${s.name} in ${label}`,
     url: `${site.url}${path}`,
     description: intro,
+    serviceType: s.name,
     broker: { "@id": ids.org },
     areaServed: { "@type": "City", name: label },
     isRelatedTo: { "@id": ids.service(s.slug) },
+    offers: {
+      "@type": "Offer",
+      priceCurrency: "USD",
+      price: "0",
+      description: `Free ${s.name.toLowerCase()} estimate in ${label}`,
+      availability: "https://schema.org/InStock",
+    },
   };
 
   return (
     <main id="main">
       <JsonLd data={graph(pageGraph({ path, name: `${s.name} in ${label}`, description: intro, type: "ItemPage", crumbs, faqs, about: [`${site.url}${path}#service`], extra: [node] }))} />
-      <Hero crumbs={crumbs} eyebrow={`${parent ? parent.name : "Roofing"} · ${c.county} County`} title={`${s.name} in ${label}`} lead={<p>{intro}</p>} service={s.slug} facts={[availability, `${c.zips.length} covered ZIP${c.zips.length === 1 ? "" : "s"}`]} />
+      <Hero crumbs={crumbs} eyebrow={`${parent ? parent.name : "Roofing"} · ${c.county} County`} title={`${s.name} in ${label}`} lead={<p>{intro}</p>} service={s.slug} facts={[availability, "Licensed & Insured Local Pros", "Free Upfront Estimates", `${c.zips.length} covered ZIP${c.zips.length === 1 ? "" : "s"}`]} />
       <section className="py-14">
         <div className="container-x grid gap-10 lg:grid-cols-[minmax(0,1fr)_340px]">
           <div className="min-w-0 space-y-10">

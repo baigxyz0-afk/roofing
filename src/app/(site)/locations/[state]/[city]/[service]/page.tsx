@@ -2,7 +2,7 @@ import { notFound } from "next/navigation";
 import { getService } from "@/content/services";
 import { getCity, getState, cityLabel, cityBySlug } from "@/content/locations";
 import { indexableCityServices } from "@/lib/sitemap";
-import { pageMeta } from "@/lib/seo";
+import { pageMeta, buildSeoTitle } from "@/lib/seo";
 import { routes } from "@/lib/routes";
 import { graph, ids, pageGraph } from "@/lib/schema";
 import { site } from "@/content/site";
@@ -49,9 +49,15 @@ export async function generateMetadata({ params }: P) {
   const g = load(p) ? null : generatedCombo(p);
   if (g) {
     const label = `${g.c.name}, ${g.st.abbr}`;
+    const baseTitle = `${g.s.name} in ${label}`;
+    const seoTitle = buildSeoTitle(baseTitle, ["Free Estimates", "Fast Local Pros", "Free Quotes", "Local Pros"]);
+    let desc = `Need ${g.s.name.toLowerCase()} in ${label}? Connect with licensed, insured local roofers for fast leak repairs, storm damage & full replacements. Free estimates!`;
+    if (desc.length > 158) {
+      desc = `Need ${g.s.name.toLowerCase()} in ${label}? Licensed, insured local roofers for leak repairs & storm damage. Get a free estimate today!`;
+    }
     return pageMeta({
-      title: `${g.s.name} in ${label}`,
-      description: `${g.s.name} in ${label} (${g.c.county} County): ${g.c.zips.length} covered ZIP${g.c.zips.length === 1 ? "" : "s"}, warning signs, nearby availability and a local roofer.`.slice(0, 158),
+      title: seoTitle,
+      description: desc,
       path: routes.cityService(g.st.slug, g.c.slug, g.s.slug),
       ogKey: `locations--${g.st.slug}`,
       noindex: !comboIndexable(g.c, g.s.slug),
@@ -85,9 +91,17 @@ export default async function CityServicePage({ params }: P) {
     name: `${s.name} in ${cityLabel(city)}`,
     url: `${site.url}${path}`,
     description: cs.answer,
+    serviceType: s.name,
     broker: { "@id": ids.org },
     areaServed: { "@id": ids.place(city.slug) },
     isRelatedTo: { "@id": ids.service(s.slug) },
+    offers: {
+      "@type": "Offer",
+      priceCurrency: "USD",
+      price: "0",
+      description: `Free ${s.name.toLowerCase()} estimate in ${cityLabel(city)}`,
+      availability: "https://schema.org/InStock",
+    },
   };
   return (
     <>

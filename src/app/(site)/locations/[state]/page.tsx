@@ -6,7 +6,7 @@ import { getArticle } from "@/content/articles";
 import { RISKS } from "@/content/risks";
 import { stateCoverage } from "@/content/coverage";
 import { indexableCities, indexableStates } from "@/lib/sitemap";
-import { pageMeta } from "@/lib/seo";
+import { pageMeta, buildSeoTitle } from "@/lib/seo";
 import { routes } from "@/lib/routes";
 import { graph, ids, pageGraph } from "@/lib/schema";
 import { availability } from "@/content/site";
@@ -31,9 +31,15 @@ function hazardsLine(risks: string[]) {
 
 export async function generateMetadata({ params }: P) {
   const st = getState((await params).state)!;
+  const baseTitle = `Roofing Contractors in ${st.name}`;
+  const seoTitle = buildSeoTitle(baseTitle, ["Free Estimates", "Fast 24/7 Pros", "Free Quotes", "Local Pros"]);
+  let desc = `Find licensed, insured roofing contractors in ${st.name}. Expert roof repair, storm damage restoration & full replacement across our network. Free estimates!`;
+  if (desc.length > 158) {
+    desc = `Licensed, insured roofing contractors in ${st.name}. Expert roof repair, storm damage & full replacement across our network. Free quotes!`;
+  }
   return pageMeta({
-    title: `Roof Repair & Replacement in ${st.name}`,
-    description: `Roofing in ${st.name}: ${hazardsLine(st.risks)}, contractor licensing and permits, and how to get connected with a local roofer.`.slice(0, 158),
+    title: seoTitle,
+    description: desc,
     path: routes.state(st.slug),
   });
 }
@@ -70,7 +76,7 @@ export default async function StatePage({ params }: P) {
         eyebrow={`${st.region} · ${st.name}`}
         title={`Roofing help in ${st.name}`}
         lead={<p>{st.intro}</p>}
-        facts={[availability, cov ? `${cov.zips.toLocaleString("en-US")} ZIP codes in our network` : "Network coverage varies", "Free to request"]}
+        facts={[availability, "Licensed & Insured Contractors", "Free Upfront Estimates", cov ? `${cov.zips.toLocaleString("en-US")} covered ZIPs` : "Network coverage varies"]}
         aside={
           <div className="rounded-2xl bg-ink-soft p-6 ring-1 ring-white/10">
             <ZipChecker dark />

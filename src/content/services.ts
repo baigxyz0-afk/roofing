@@ -20,9 +20,9 @@ const core: Service[] = [
     shortName: "Roof repair",
     category: "repair",
     status: "PUBLISHED",
-    seoTitle: "Roof Repair: Causes, Process & Cost Factors",
+    seoTitle: "Roof Repair Services Near You | Free Quotes & Fast Fix",
     metaDescription:
-      "Roof repair explained: missing shingles, failed pipe boots, flashing, soft decking and ice-dam damage. What a roofer checks, and how to get one near you.",
+      "Need roof repair near you? Connect with licensed, insured local roofers for emergency leak repairs, missing shingles & storm damage. Get a free estimate!",
     h1: "Roof repair",
     answer:
       "Most residential roof repairs are specific and small: replacing shingles that blew off, resealing or replacing flashing, swapping a cracked pipe boot, or cutting out a soft section of decking. A roofer inspects the whole roof and the attic first, names the cause and quotes the repair before starting.",
@@ -75,9 +75,9 @@ const core: Service[] = [
     shortName: "Leak repair",
     category: "repair",
     status: "PUBLISHED",
-    seoTitle: "Roof Leak Repair: Finding and Fixing the Source",
+    seoTitle: "Roof Leak Repair Near You | Fast Leak Detection & Fix",
     metaDescription:
-      "How roof leaks are traced and fixed: pipe boots, valleys, wall and chimney flashing, skylights and wind-driven rain. What to do before the roofer arrives.",
+      "Stop active roof leaks fast. Connect with local roofing specialists for emergency leak detection, pipe boot fixes & ceiling damage repair. Free quotes!",
     h1: "Roof leak detection and repair",
     answer:
       "Most roof leaks come from penetrations and transitions, not open shingles: pipe boots, valley flashing, wall and chimney flashing, skylights and vents. A roofer traces water from the stain back up the decking to its entry point, then repairs that detail.",
@@ -130,9 +130,9 @@ const core: Service[] = [
     shortName: "Emergency tarping",
     category: "repair",
     status: "PUBLISHED",
-    seoTitle: "Emergency Roof Repair & Tarping: What to Do Now",
+    seoTitle: "Emergency Roof Repair & 24/7 Tarping | Fast Dispatch",
     metaDescription:
-      "Roof leaking, torn open or hit by a tree? What to do right now, how emergency tarping works, insurance documentation, and how to reach a roofer.",
+      "Need emergency roof repair or tarping right now? 24/7 dispatch for severe leaks, storm blow-offs & fallen limbs. Connect with immediate local roofers!",
     h1: "Emergency roof repair and tarping",
     answer:
       "An emergency roof visit stops water from getting in: the roofer secures a tarp over the damaged area, battens it down so wind can't peel it off, and photographs the damage for your insurance claim. Permanent repairs follow once the weather and the claim allow.",
@@ -181,9 +181,9 @@ const core: Service[] = [
     shortName: "Storm damage",
     category: "storm",
     status: "PUBLISHED",
-    seoTitle: "Storm Damage Roof Repair & Inspection",
+    seoTitle: "Storm Damage Roof Repair Near You | 24/7 Emergency Help",
     metaDescription:
-      "Roof inspection and repair after hail, hurricanes, derechos, tornadoes and fallen trees: what roofers check, documentation for insurance, and red flags.",
+      "Fast storm damage roof repair near you. Expert inspections, emergency tarping, insurance documentation & wind-lifted shingle repairs. Free estimates!",
     h1: "Storm damage roof repair",
     answer:
       "After a storm, a roofer checks for hail bruising, creased or missing shingles, lifted flashing, damaged vents and impact from limbs, then documents it with dated photos. Minor damage is repaired; widespread damage on a covered loss usually means a claim and a full replacement.",
@@ -232,9 +232,9 @@ const core: Service[] = [
     shortName: "Hail damage",
     category: "storm",
     status: "PUBLISHED",
-    seoTitle: "Hail Damage Roof Inspection & Repair",
+    seoTitle: "Hail Damage Roof Repair Near You | Free Storm Inspection",
     metaDescription:
-      "How roofers identify hail damage (bruised shingles, granule loss, dented metal), how test squares work for insurance, and when hail means a new roof.",
+      "Need hail damage roof repair near you? Get a free storm damage roof inspection for bruised shingles, dented vents & insurance claims. Fast local pros!",
     h1: "Hail damage roof inspection and repair",
     answer:
       "Hail damages asphalt shingles by bruising the mat and knocking off granules, which shortens the roof's life even when nothing leaks. A roofer checks test squares on each slope, the soft metals and the ridge to judge whether damage is isolated or widespread enough for replacement.",
@@ -283,9 +283,9 @@ const core: Service[] = [
     shortName: "Wind damage",
     category: "storm",
     status: "PUBLISHED",
-    seoTitle: "Hurricane & Wind Damage Roof Repair",
+    seoTitle: "Wind & Hurricane Roof Damage Repair | Fast Response",
     metaDescription:
-      "Roof repair after hurricanes, tropical storms, derechos and high winds: blown-off shingles, lifted decking, edge failures and coastal building requirements.",
+      "Expert wind damage roof repair for lifted shingles, torn decking & storm blow-offs. Connect with local licensed roofers for fast repairs & free quotes!",
     h1: "Hurricane and wind damage roof repair",
     answer:
       "Wind damages roofs from the edges in: it lifts shingle tabs, breaks the seal strips, peels ridge caps and can pull decking at the eaves and gables. Repair means replacing what blew off, re-sealing lifted shingles and, in coastal high-wind zones, meeting stricter code and inspection requirements.",
@@ -334,9 +334,9 @@ const core: Service[] = [
     shortName: "Insurance claims",
     category: "storm",
     status: "PUBLISHED",
-    seoTitle: "Roof Insurance Claims: Inspections & How They Work",
+    seoTitle: "Roof Damage Insurance Claims | Free Claim Inspection",
     metaDescription:
-      "How roof insurance claims work: inspection, filing, meeting the adjuster, deductibles, depreciation, supplements and what a roofer can and can't do.",
+      "Navigating a roof damage insurance claim? Get a free professional inspection report, storm damage photos & estimate to maximize your insurance claim.",
     h1: "Roof insurance claim inspections",
     answer:
       "A roofer's job in an insurance claim is to document the damage, meet the adjuster on the roof, and provide a repair or replacement scope. You file the claim and deal with your insurer, or hire a licensed public adjuster; in most states a contractor isn't allowed to negotiate the claim for you.",
@@ -385,9 +385,9 @@ const core: Service[] = [
     shortName: "Roof replacement",
     category: "replacement",
     status: "PUBLISHED",
-    seoTitle: "Roof Replacement: Process, Materials & Cost Factors",
+    seoTitle: "Roof Replacement Contractors Near You | Free Estimates",
     metaDescription:
-      "What a full roof replacement includes: tear-off, decking, underlayment, ice barrier, flashing and ventilation, plus asphalt, Class 4, metal and tile options.",
+      "Find trusted roof replacement contractors near you. Compare quotes for architectural shingles, metal & tile roofs. Fully licensed & insured. Get a quote!",
     h1: "Roof replacement",
     answer:
       "A roof replacement tears off the old roofing down to the deck, replaces damaged decking, installs new underlayment, drip edge, flashing and vents, and then the new roof covering. Most single-family homes are re-roofed in one to three days, depending on size, material and weather.",

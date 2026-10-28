@@ -34,6 +34,13 @@ export function ServicePageView({ slug }: { slug: string }) {
     category: getCategory(s.category).name,
     broker: { "@id": ids.org },
     areaServed: { "@id": ids.country },
+    offers: {
+      "@type": "Offer",
+      priceCurrency: "USD",
+      price: "0",
+      description: `Free ${s.name.toLowerCase()} inspection and estimate quote`,
+      availability: "https://schema.org/InStock",
+    },
   };
   if (parent) service.isRelatedTo = { "@id": ids.service(parent.slug) };
   return (

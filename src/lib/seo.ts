@@ -12,6 +12,14 @@ type Opts = {
 
 const MAX = 62;
 
+export function buildSeoTitle(base: string, hooks: string[] = ["Free Estimates", "Fast Local Pros", "Free Quotes", "Local Pros"]): string {
+  for (const hook of hooks) {
+    const candidate = `${base} | ${hook}`;
+    if (candidate.length <= 60) return candidate;
+  }
+  return base;
+}
+
 export function fullTitle(title: string) {
   const withBrand = `${title} | ${site.name}`;
   return withBrand.length <= MAX ? withBrand : title;

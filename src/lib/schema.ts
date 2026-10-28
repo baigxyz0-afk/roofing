@@ -35,6 +35,7 @@ export function siteGraph() {
       "Ridgewise Roofing is a nationwide roofing referral service covering all 50 U.S. states and Washington, D.C. It connects homeowners with independent roofing contractors for roof repair, leaks, ice dams, storm, hail and hurricane damage, insurance claim inspections, roof replacement, and metal, tile and flat roofs.",
     areaServed: { "@id": ids.country },
     knowsAbout: ["Roof repair", "Roof leak repair", "Hail damage", "Hurricane and wind damage", "Roof insurance claims", "Roof replacement", "Impact-resistant shingles", "Metal roofing", "Flat roofing", "Tile roofing", "Ice dams", "Wildfire-resistant roofing", "FORTIFIED roofs", "Attic ventilation"],
+    priceRange: "$$",
     hasOfferCatalog: {
       "@type": "OfferCatalog",
       name: "Roofing services",
@@ -47,7 +48,17 @@ export function siteGraph() {
       })),
     },
   };
-  if (site.phoneIsReal) org.telephone = site.phoneE164;
+  if (site.phoneIsReal) {
+    org.telephone = site.phoneE164;
+    org.contactPoint = {
+      "@type": "ContactPoint",
+      telephone: site.phoneE164,
+      contactType: "customer support",
+      areaServed: { "@id": ids.country },
+      availableLanguage: "en",
+      contactOption: "TollFree",
+    };
+  }
   if (site.email) org.email = site.email;
   if (site.googleProfileUrl) org.sameAs = [site.googleProfileUrl];
 
@@ -55,7 +66,20 @@ export function siteGraph() {
     org,
     { "@type": "ImageObject", "@id": ids.logo, url: `${U}/brand/logo.png`, width: 600, height: 160, caption: site.name },
     { "@type": "WebSite", "@id": ids.website, url: `${U}/`, name: site.name, publisher: { "@id": ids.org }, inLanguage: "en-US" },
-    ...publishedServices.map((s) => ({ "@type": "Service", "@id": ids.service(s.slug), name: s.name, url: `${U}${routes.service(s.slug)}` })),
+    ...publishedServices.map((s) => ({
+      "@type": "Service",
+      "@id": ids.service(s.slug),
+      name: s.name,
+      url: `${U}${routes.service(s.slug)}`,
+      serviceType: s.name,
+      offers: {
+        "@type": "Offer",
+        priceCurrency: "USD",
+        price: "0",
+        description: "Free roof inspection and estimate quote",
+        availability: "https://schema.org/InStock",
+      },
+    })),
     { "@type": "Country", "@id": ids.country, name: "United States", identifier: "US" },
     ...indexableStates().map((s) => ({ "@type": "State", "@id": ids.state(s.slug), name: s.name, containedInPlace: { "@id": ids.country } })),
     ...[...new Map(cities.map((c) => [`${c.county}-${c.stateSlug}`, c])).values()].map((c) => ({

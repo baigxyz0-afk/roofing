@@ -10,9 +10,9 @@ import { JsonLd, ServiceCard } from "@/components/ui";
 import { Icon } from "@/components/icons";
 import { CtaBand } from "@/components/CtaBand";
 
-const title = "Roofing Services: Repair, Storm Damage & Replacement";
+const title = "Roofing Services Near You | Free Estimates & Fast Pros";
 const description =
-  "Every roofing service we connect homeowners with: repairs, leaks, ice dams, storm and hail damage, replacement, flat roofs and ventilation.";
+  "Need professional roofing services near you? Connect with licensed, insured local roofers for leaks, storm damage & full replacements. Free estimates!";
 const path = routes.services();
 
 export const metadata = pageMeta({ title, description, path });
