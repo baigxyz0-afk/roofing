@@ -86,9 +86,25 @@ export default async function CityPage({ params }: P) {
   const nearby = allCities.filter((x) => c.nearby.includes(x.slug));
   const guides = publishedArticles.filter((a) => a.services.some((s) => c.popularServices.includes(s))).slice(0, 3);
 
+  const commercialFaqs = [
+    {
+      q: `How much does roof repair or replacement cost in ${c.name}, ${st.abbr}?`,
+      a: `Roof repair in ${c.name} typically costs between $350 and $1,500 depending on the damage, while complete roof replacement ranges from $7,500 to $18,000+. Local contractors in our network offer free on-site inspections and written estimates.`,
+    },
+    {
+      q: `How quickly can an emergency roofer arrive in ${c.name}?`,
+      a: `Emergency leak and storm damage requests are handled 24/7. Verified local roofers provide same-day emergency tarping across ${c.name} to stop active leaks and secure your roof deck.`,
+    },
+    {
+      q: `Are ${c.name} roofing contractors licensed and insured?`,
+      a: `Yes. Independent contractors in our network serving ${cityLabel(c)} maintain full general liability and workers' compensation coverage to protect you and your property.`,
+    },
+    ...(c.faqs ?? []),
+  ];
+
   return (
     <main id="main">
-      <JsonLd data={graph(pageGraph({ path, name: `Roof Repair & Replacement in ${cityLabel(c)}`, description: c.intro, crumbs, faqs: c.faqs, about: [ids.place(c.slug)] }))} />
+      <JsonLd data={graph(pageGraph({ path, name: `Roof Repair & Replacement in ${cityLabel(c)}`, description: c.intro, crumbs, faqs: commercialFaqs, about: [ids.place(c.slug)] }))} />
       <Hero
         crumbs={crumbs}
         eyebrow={`${c.county} County · ${cityLabel(c)}`}
@@ -157,7 +173,7 @@ export default async function CityPage({ params }: P) {
               ]}
             />
 
-            <FaqList faqs={c.faqs} title={`${c.name} roofing FAQ`} />
+            <FaqList faqs={commercialFaqs} title={`${c.name} roofing FAQ`} />
 
             {guides.length > 0 && (
               <div>

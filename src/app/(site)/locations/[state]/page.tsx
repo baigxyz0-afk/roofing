@@ -9,7 +9,7 @@ import { indexableCities, indexableStates } from "@/lib/sitemap";
 import { pageMeta, buildSeoTitle } from "@/lib/seo";
 import { routes } from "@/lib/routes";
 import { graph, ids, pageGraph } from "@/lib/schema";
-import { availability } from "@/content/site";
+import { site, availability } from "@/content/site";
 import { Hero } from "@/components/Hero";
 import { Chip, FaqList, JsonLd, ServiceCard } from "@/components/ui";
 import { Icon } from "@/components/icons";
@@ -68,9 +68,29 @@ export default async function StatePage({ params }: P) {
   const neighbors = indexableStates().filter((s) => st.neighbors.includes(s.slug));
   const title = `Roof Repair & Replacement in ${st.name}`;
 
+  const commercialStateFaqs = [
+    {
+      q: `How much does roof replacement cost in ${st.name}?`,
+      a: `In ${st.name}, roof replacement typically costs between $6,500 and $16,500 for asphalt shingles on an average-sized home. Premium materials like standing seam metal, clay or concrete tile can range from $15,000 to $35,000+. Factors include roof pitch, tear-off layers, decking condition, and local permit fees. Network contractors provide free, itemized estimates.`,
+    },
+    {
+      q: `Are roofing contractors in ${st.name} licensed and insured?`,
+      a: `Yes. Independent roofing contractors in our ${st.name} network carry mandatory general liability insurance and workers' compensation coverage to protect homeowners against property damage or accidents during construction.`,
+    },
+    {
+      q: `Does homeowners insurance cover roof damage in ${st.name}?`,
+      a: `Most ${st.name} homeowners policies cover damage caused by sudden weather events including hail, wind storms, hurricane force winds, and falling limbs. Local roofers assist with pre-claim inspections and photo documentation for insurance adjusters.`,
+    },
+    {
+      q: `How do I request emergency roof repair in ${st.name}?`,
+      a: `Call ${site.phone} anytime 24/7. We route your call immediately to independent roofers serving your ZIP code for rapid leak tarping and emergency repairs.`,
+    },
+    ...(st.faqs ?? []),
+  ];
+
   return (
     <main id="main">
-      <JsonLd data={graph(pageGraph({ path, name: title, description: st.intro, type: "CollectionPage", crumbs, faqs: st.faqs, about: [ids.state(st.slug)] }))} />
+      <JsonLd data={graph(pageGraph({ path, name: title, description: st.intro, type: "CollectionPage", crumbs, faqs: commercialStateFaqs, about: [ids.state(st.slug)] }))} />
       <Hero
         crumbs={crumbs}
         eyebrow={`${st.region} · ${st.name}`}
@@ -213,7 +233,7 @@ export default async function StatePage({ params }: P) {
 
       <section className="bg-white py-14">
         <div className="container-x max-w-4xl">
-          <FaqList faqs={st.faqs} title={`${st.name} roofing FAQ`} />
+          <FaqList faqs={commercialStateFaqs} title={`${st.name} roofing FAQ`} />
         </div>
       </section>
       <CtaBand title={`Need a roofer in ${st.name}?`} />

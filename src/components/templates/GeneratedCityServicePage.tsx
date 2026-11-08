@@ -41,7 +41,23 @@ export function GeneratedCityServicePage({ c, st, s, siblingsWithPage }: { c: Ge
   ].join(" ");
 
   const faqs = [
-    { q: `Can I get ${s.shortName?.toLowerCase() ?? s.name.toLowerCase()} in ${label}?`, a: `Yes. Covered ZIP codes in ${c.name}: ${c.zips.join(", ")}. Call ${site.phone} or request service online.` },
+    {
+      q: `How much does ${s.name.toLowerCase()} cost in ${c.name}?`,
+      a: `The cost of ${s.name.toLowerCase()} in ${c.name} varies based on roof square footage, pitch, and materials. Minor repairs start around $350-$1,200, while complete replacements range from $7,500 to $16,000+. Independent local contractors provide free upfront written estimates.`,
+    },
+    {
+      q: `How fast can I get ${s.shortName?.toLowerCase() ?? s.name.toLowerCase()} service in ${label}?`,
+      a: `Emergency roof leaks and storm damage requests are prioritized for same-day dispatch and emergency tarping across ${c.zips.join(", ")}. Standard inspections and consultations are typically scheduled within 24 to 48 hours.`,
+    },
+    {
+      q: `Are ${label} roofing contractors licensed and insured?`,
+      a: `Yes. Contractors in our network serving ${c.name} carry general liability and workers' compensation coverage, ensuring verified protection for your home and property.`,
+    },
+    {
+      q: `Does insurance pay for ${s.name.toLowerCase()} in ${st.name}?`,
+      a: `If work is needed due to storm, wind, hail, or fallen trees, homeowners insurance often covers the repair or replacement cost minus your deductible. Local roofers can provide a comprehensive inspection report for your insurance claim.`,
+    },
+    { q: `What ZIP codes in ${label} are covered for ${s.shortName?.toLowerCase() ?? s.name.toLowerCase()}?`, a: `Covered ZIP codes in ${c.name}: ${c.zips.join(", ")}. Call ${site.phone} or request a free estimate online.` },
     ...(nearSame.length ? [{ q: `Where else nearby is ${s.shortName?.toLowerCase() ?? s.name.toLowerCase()} available?`, a: list(nearSame.map((p) => `${p.name} (${p.miles} mi)`)) + "." }] : []),
   ];
 

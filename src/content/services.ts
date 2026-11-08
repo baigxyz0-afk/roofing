@@ -334,9 +334,9 @@ const core: Service[] = [
     shortName: "Insurance claims",
     category: "storm",
     status: "PUBLISHED",
-    seoTitle: "Roof Damage Insurance Claims | Free Claim Inspection",
+    seoTitle: "Roof Damage Insurance Claims | Free Claim Inspection & Scope",
     metaDescription:
-      "Navigating a roof damage insurance claim? Get a free professional inspection report, storm damage photos & estimate to maximize your insurance claim.",
+      "Filing a roof damage insurance claim? Learn the claim process, deductible rules & get a free professional storm damage inspection report with photos.",
     h1: "Roof insurance claim inspections",
     answer:
       "A roofer's job in an insurance claim is to document the damage, meet the adjuster on the roof, and provide a repair or replacement scope. You file the claim and deal with your insurer, or hire a licensed public adjuster; in most states a contractor isn't allowed to negotiate the claim for you.",
@@ -365,6 +365,8 @@ const core: Service[] = [
       "Upgrades you choose beyond the approved scope",
     ],
     faqs: [
+      { q: "How do I file a roof damage insurance claim?", a: "Start with a free pre-claim inspection from a licensed roofer to photograph and document all storm, hail, or wind damage. Then contact your insurance company to file the claim, provide the storm date, and have your roofer present during the adjuster's inspection." },
+      { q: "Does homeowners insurance pay for a full roof replacement?", a: "Yes, if storm, wind, or hail damage is severe or widespread enough that repairs cannot restore the roof to code, most standard homeowners policies cover full replacement cost minus your deductible." },
       { q: "What's the difference between replacement cost and actual cash value?", a: "A replacement-cost policy pays to replace the roof, usually releasing withheld depreciation after the work is done. An actual-cash-value policy pays the depreciated value, so an older roof may pay out much less." },
       { q: "What if my claim is denied?", a: "Ask for the denial in writing with the reasons, request a re-inspection if you have new evidence, or consult a licensed public adjuster or attorney. Your state insurance department can also explain your options." },
       { q: "Can a roofer talk to my insurance company?", a: "A roofer can discuss the scope and meet the adjuster, but negotiating the claim on your behalf is generally limited to you, an attorney or a licensed public adjuster." },

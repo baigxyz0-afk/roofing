@@ -39,9 +39,25 @@ export function GeneratedCityPage({ c, st }: { c: GeneratedCity; st: State }) {
     .join(" ");
 
   const faqs = [
-    { q: `Is ${label} in your network?`, a: `Yes. Covered ZIP codes in ${c.name}: ${c.zips.join(", ")}.` },
+    {
+      q: `How much does roof repair or replacement cost in ${c.name}?`,
+      a: `Roof repair in ${c.name} typically costs between $350 and $1,500 depending on the damage and materials. Full roof replacement generally ranges from $7,500 to $18,000+ based on roof pitch, square footage, and shingle type. Local contractors in our network provide free, no-obligation upfront estimates.`,
+    },
+    {
+      q: `How quickly can an emergency roofer arrive in ${c.name}?`,
+      a: `Emergency roof repair requests are answered 24/7. When sudden leaks, storm damage, or fallen limbs threaten your home, local roofers serving ${c.name} offer same-day emergency tarping and dispatch to secure your roof.`,
+    },
+    {
+      q: `Are the roofers in ${c.name} licensed and insured?`,
+      a: `Yes. Independent contractors in our ${st.name} network carry general liability insurance and workers' compensation coverage to protect homeowners and property throughout ${c.county} County.`,
+    },
+    {
+      q: `Does homeowners insurance cover storm and roof damage in ${c.name}?`,
+      a: `Most standard homeowners policies cover sudden storm, hail, wind, and tree impact damage. Contractors in our network can inspect and document storm damage with dated photos and meet with your insurance adjuster on site.`,
+    },
+    { q: `Which ZIP codes in ${c.name} are covered?`, a: `Covered ZIP codes in ${c.name} include: ${c.zips.join(", ")}. Call ${site.phone} to connect with a verified local roofing pro.` },
     ...(c.nearbyCovered.length
-      ? [{ q: `What's covered near ${c.name}?`, a: list(c.nearbyCovered.slice(0, 6).map((n) => `${n.name}, ${n.miles} miles away (${n.zips} ZIP${n.zips === 1 ? "" : "s"})`)) + "." }]
+      ? [{ q: `What areas are covered near ${c.name}?`, a: list(c.nearbyCovered.slice(0, 6).map((n) => `${n.name}, ${n.miles} miles away (${n.zips} ZIP${n.zips === 1 ? "" : "s"})`)) + "." }]
       : []),
   ];
 
