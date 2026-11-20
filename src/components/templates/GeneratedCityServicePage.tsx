@@ -38,6 +38,7 @@ export function GeneratedCityServicePage({ c, st, s, siblingsWithPage }: { c: Ge
   const intro = [
     `${s.name} in ${c.name} (${c.county} County) usually follows ${why}.`,
     `Independent roofers in our network serve ${zipText} here${c.ref ? `, about ${c.ref.miles} miles ${c.ref.dir} of ${c.ref.name}` : ""}.`,
+    `On the visit, the roofer photographs the damage, checks the decking, flashing and attic, and leaves a written scope you can use for a repair quote or an insurance claim.`,
   ].join(" ");
 
   const faqs = [
@@ -56,6 +57,10 @@ export function GeneratedCityServicePage({ c, st, s, siblingsWithPage }: { c: Ge
     {
       q: `Does insurance pay for ${s.name.toLowerCase()} in ${st.name}?`,
       a: `If work is needed due to storm, wind, hail, or fallen trees, homeowners insurance often covers the repair or replacement cost minus your deductible. Local roofers can provide a comprehensive inspection report for your insurance claim.`,
+    },
+    { 
+      q: `What does a roofer check during a ${s.name.toLowerCase()} visit in ${c.name}?`, 
+      a: `The roofer walks every slope, checks shingles, flashing, vents and the decking underneath, looks in the attic for leaks or daylight, and photographs everything. You get a written scope with the damage, the fix and the price before any work starts.`, 
     },
     { q: `What ZIP codes in ${label} are covered for ${s.shortName?.toLowerCase() ?? s.name.toLowerCase()}?`, a: `Covered ZIP codes in ${c.name}: ${c.zips.join(", ")}. Call ${site.phone} or request a free estimate online.` },
     ...(nearSame.length ? [{ q: `Where else nearby is ${s.shortName?.toLowerCase() ?? s.name.toLowerCase()} available?`, a: list(nearSame.map((p) => `${p.name} (${p.miles} mi)`)) + "." }] : []),
