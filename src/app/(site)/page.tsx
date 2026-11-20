@@ -23,7 +23,7 @@ import { beforeAfter } from "@/content/beforeAfter";
 import { RoofCheck } from "@/components/RoofCheck";
 import { LoopVideo } from "@/components/LoopVideo";
 
-const title = "Roof Repair & Replacement Near Me | Free Estimates (24/7)";
+const title = "Roof Repair & Replacement Near Me | Licensed & Insured";
 const description =
   "Need local roofers? Connect with licensed, insured contractors for emergency leak repairs, hail & storm damage or roof replacement. Free $0 estimates nationwide!";
 
