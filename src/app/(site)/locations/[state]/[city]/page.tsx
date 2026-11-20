@@ -37,11 +37,11 @@ export async function generateMetadata({ params }: P) {
   if (g) {
     const st = getState(p.state)!;
     const label = `${g.name}, ${st.abbr}`;
-    const baseTitle = `Local Roofers in ${label}`;
+    const baseTitle = `Roofing Companies in ${label}`;
     const seoTitle = buildSeoTitle(baseTitle, ["Free Estimates", "Fast Repairs", "Free Quotes", "Local Pros"]);
-    let desc = `Find trusted local roofers in ${label}. Licensed, insured contractors for leak repairs, storm damage & replacements. Free estimates!`;
+    let desc = `Find roofing companies in ${label}. Licensed, insured contractors for leak repairs, storm damage & replacements. Free estimates!`;
     if (desc.length > 158) {
-      desc = `Local roofers in ${label}: licensed, insured contractors for leak repairs, storm damage & replacements. Free estimates!`;
+      desc = `Roofing companies in ${label}: licensed, insured contractors for leak repairs, storm damage & replacements. Free estimates!`;
     }
     return pageMeta({
       title: seoTitle,
@@ -53,11 +53,11 @@ export async function generateMetadata({ params }: P) {
   }
   const c = getCity(p.state, p.city)!;
   const label = cityLabel(c);
-  const baseTitle = `Local Roofers in ${label}`;
+  const baseTitle = `Roofing Companies in ${label}`;
   const seoTitle = buildSeoTitle(baseTitle, ["Free Estimates", "Fast Repairs", "Free Quotes", "Local Pros"]);
-  let desc = `Find trusted local roofers in ${label}. Licensed, insured contractors for leak repairs, storm damage & replacements. Free estimates!`;
+  let desc = `Find roofing companies in ${label}. Licensed, insured contractors for leak repairs, storm damage & replacements. Free estimates!`;
   if (desc.length > 158) {
-    desc = `Local roofers in ${label}: licensed, insured contractors for leak repairs, storm damage & replacements. Free estimates!`;
+    desc = `Roofing companies in ${label}: licensed, insured contractors for leak repairs, storm damage & replacements. Free estimates!`;
   }
   return pageMeta({
     title: seoTitle,
@@ -108,7 +108,7 @@ export default async function CityPage({ params }: P) {
       <Hero
         crumbs={crumbs}
         eyebrow={`${c.county} County · ${cityLabel(c)}`}
-        title={`Roofing help in ${c.name}`}
+        title={`Roofing companies in ${cityLabel(c)}`}
         lead={<p>{c.intro}</p>}
         facts={[availability, "Licensed & Insured Local Pros", "Free Estimates & Inspection", `Neighborhoods: ${c.areas.slice(0, 3).join(", ")}`]}
         aside={
