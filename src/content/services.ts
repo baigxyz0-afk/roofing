@@ -334,15 +334,16 @@ const core: Service[] = [
     shortName: "Insurance claims",
     category: "storm",
     status: "PUBLISHED",
-    seoTitle: "Roof Damage Insurance Claims | Free Claim Inspection & Scope",
+    seoTitle: "Roof Insurance Claim | Roof Damage Insurance Claim Help",
     metaDescription:
-      "Filing a roof damage insurance claim? Learn the claim process, deductible rules & get a free professional storm damage inspection report with photos.",
+      "Filing a roof insurance claim after storm damage? Learn the claim process, deductible rules, and get a free inspection report with photos.",
     h1: "Roof insurance claim inspections",
     answer:
       "A roofer's job in an insurance claim is to document the damage, meet the adjuster on the roof, and provide a repair or replacement scope. You file the claim and deal with your insurer, or hire a licensed public adjuster; in most states a contractor isn't allowed to negotiate the claim for you.",
     intro: [
       "Many storm-related roof replacements are paid through homeowners insurance, and the process goes better with good documentation: dated photos, the storm date, measurements and a clear scope. A thorough inspection before you call your insurer helps you decide whether a claim is worth filing.",
       "Watch the deductible. Policies in hail and hurricane states often carry a separate wind, hail or named-storm deductible set as a percentage of dwelling coverage, which can be several thousand dollars. Several states expressly prohibit contractors from waiving or rebating it.",
+      "File promptly: most policies require notice within days of the storm, and an adjuster usually visits within a week or two. Replacement-cost policies pay the full repair cost and release withheld depreciation after the work is done; actual-cash-value policies pay only the depreciated value, so an older roof pays out much less. If a claim is denied, get the denial in writing, ask for a re-inspection with new photos or an independent estimate, and contact your state insurance department or a licensed public adjuster.",
     ],
     signs: [
       "A named storm or hail event passed over your area",
@@ -369,6 +370,7 @@ const core: Service[] = [
       { q: "Does homeowners insurance pay for a full roof replacement?", a: "Yes, if storm, wind, or hail damage is severe or widespread enough that repairs cannot restore the roof to code, most standard homeowners policies cover full replacement cost minus your deductible." },
       { q: "What's the difference between replacement cost and actual cash value?", a: "A replacement-cost policy pays to replace the roof, usually releasing withheld depreciation after the work is done. An actual-cash-value policy pays the depreciated value, so an older roof may pay out much less." },
       { q: "What if my claim is denied?", a: "Ask for the denial in writing with the reasons, request a re-inspection if you have new evidence, or consult a licensed public adjuster or attorney. Your state insurance department can also explain your options." },
+      { q: "How long does a roof insurance claim take?", a: "A straightforward claim is often inspected within one to two weeks of filing and settled within a few weeks after the adjuster visit. Complex claims, supplements for hidden damage, or a denied claim that needs re-inspection can take several months." },
       { q: "Can a roofer talk to my insurance company?", a: "A roofer can discuss the scope and meet the adjuster, but negotiating the claim on your behalf is generally limited to you, an attorney or a licensed public adjuster." },
     ],
     related: ["hail-damage-roof-repair", "wind-damage-roof-repair", "roof-inspection", "roof-replacement"],
